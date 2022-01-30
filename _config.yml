@@ -4,11 +4,19 @@
 title: Reduct Storage
 description: "Historian Object Storage"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "/homepage" #important: start with /
-url: "https://reduct-storage.gitlab.io/homepage"
+baseurl: "" #important: start with /
+url: "https://reduct-storage.dev"
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+# Markdown Processors
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
 permalink: /:categories/:title/
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
 

@@ -31,7 +31,37 @@ permalink: /
     </div>
   </div><!--/container -->
 </div><!--/service -->
+<div>
+  <div class="container mtb">
+    <h3 class="text-center"> Usage Example</h3>
 
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">CURL</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="home">
+{% highlight ruby %}
+# Read Info about service
+curl http://127.0.0.1:8383/info
+
+# Create a bucket
+curl -d "{\"quot_type\":\"FIFO\", \"quota_size\":10000}" -X POST -a http://127.0.0.1:8383/b/my_data
+
+# Write some data
+curl -d "some_data" -X POST -a http://127.0.0.1:8383/b/my_data/entry_1?ts=10000
+
+# Read the data by timestamp
+curl  http://127.0.0.1:8383/b/my_data/entry_1?ts=10000
+{% endhighlight %}
+      </div>
+    </div>
+  </div>
+</div>
+<!--
 <div class="container mtb">
   <div class="row">
     <div class="col-lg-4 col-lg-offset-1">
@@ -56,5 +86,6 @@ permalink: /
       {% endfor %}
     </div>
 
-  </div><!--/row -->
-</div><!--/container -->
+  </div>
+</div>
+-->
