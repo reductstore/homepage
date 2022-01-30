@@ -3,7 +3,7 @@
 # Site settings
 title: Reduct Storage
 description: "Historian Object Storage"
-analytics: #Google analytics code in the format XX-nnnnnnnn-n
+analytics: G-Y51RZRPE3X
 baseurl: "" #important: start with /
 url: "https://reduct-storage.dev"
 
@@ -42,23 +42,13 @@ collections:
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
-  - title: dribbble
-    url:
-  - title: facebook
-    url:
-  - title: twitter
-    url:
-  - title: instagram
-    url:
-  - title: tumblr
-    url:
+  - title: github
+    url: https://github.com/reduct-storage
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
   - lines:
-    - Some Ave, 987,
-    - 23890, New York,
-    - United States.
+      - Hamburg, Germany
 email: atimin@gmail.com
 
 
@@ -69,7 +59,7 @@ members:
   - name: Alexey Timin
     position: Creator
     text: C++\Python Developer
-#    img: team01.jpg
+    #    img: team01.jpg
     social:
       - title: envelope #use for email address
         url: mailto:atimin@gmail.com
@@ -115,7 +105,7 @@ members:
 #    img: client04.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+about: "Reduct Storate - 100% open source (AGPL) historian object storage with focus on AI/ML applications."
 
 # Testimonial content. Shown on Home and About page.
 #testimonial:
