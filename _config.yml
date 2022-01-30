@@ -105,7 +105,7 @@ members:
 #    img: client04.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Reduct Storate - 100% open source (AGPL) historian object storage with focus on AI/ML applications."
+about: "Reduct Storage - 100% open source (AGPL) historian object storage with focus on AI/ML applications."
 
 # Testimonial content. Shown on Home and About page.
 #testimonial:
