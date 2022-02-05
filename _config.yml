@@ -2,20 +2,20 @@
 
 # Site settings
 title: Reduct Storage
-description: "Historian Object Storage"
+description: "Historian Object Storage with focus on AI/ML applications"
 analytics: G-Y51RZRPE3X
 baseurl: "" #important: start with /
 url: "https://reduct-storage.dev"
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+
 
 # Markdown Processors
 kramdown:
   input: GFM
   auto_ids: true
-  syntax_highlighter: rouge
+  highlighter: rouge
 
 permalink: /:categories/:title/
 excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
@@ -44,6 +44,8 @@ collections:
 social:
   - title: github
     url: https://github.com/reduct-storage
+  - title: discord
+    url: https://discord.gg/XnH7cQzmTZ
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:

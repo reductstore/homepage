@@ -1,0 +1,22 @@
+{% highlight cpp %}
+#include <reduct/client.h>
+#include <fmt/core.h>
+
+using reduct::IClient;
+using reduct::IBucket;
+
+int main() {
+  // Create a bucket
+  auto [bucket, create_err] = client->CreateBucket("bucket");
+
+  // Write some data to the storage
+  IBucket::Time ts = IBucket::Time::clock::now();
+  auto write_err = bucket->Write("entry-1", "some_data1", ts);
+
+  // Read the data by timestamp
+  auto [data, read_err] = bucket->Read("entry-1", ts);
+  fmt::print("Read data: {}\n", data);
+  return 0;
+}
+{% endhighlight %}
+
