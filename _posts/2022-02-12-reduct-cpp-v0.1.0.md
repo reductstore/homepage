@@ -6,8 +6,8 @@ author: Alexey Timin
 categories:
 - release
 - SDKs
-img: post01.png
-thumb: thumb01.png
+img: cpp.png
+thumb: cpp.png
 ---
 
 A [new C++ Client SDK][2] for C++ has been released. It completely implements 
