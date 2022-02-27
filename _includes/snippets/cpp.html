@@ -1,6 +1,5 @@
 {% highlight cpp %}
 #include <reduct/client.h>
-
 #include <iostream>
 
 using reduct::IBucket;
@@ -9,12 +8,7 @@ using reduct::IClient;
 int main() {
   auto client = IClient::Build("http://127.0.0.1:8383");
   // Create a bucket
-  auto [bucket, create_err] =
-      client->CreateBucket("bucket");
-  if (create_err) {
-    std::cerr << "Error: " << create_err;
-    return -1;
-  }
+  auto [bucket, create_err] = client->CreateBucket("bucket");
 
   // Write some data
   IBucket::Time ts = IBucket::Time::clock::now();

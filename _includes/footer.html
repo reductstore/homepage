@@ -1,23 +1,36 @@
 <div id="footerwrap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <h4>About</h4>
-                <div class="hline-w"></div>
-                <p>{{ site.about }}</p>
-            </div>
-            <div class="col-lg-4">
-                <h4>Social Links</h4>
-                <div class="hline-w"></div>
-                <p>
-                    {% for network in site.social %}
-                        <a href="{{ network.url }}" class="btn-social btn-outline">
-                          <i class="fab fa-{{ network.title }}" aria-hidden="true"></i>
-                          <span class="sr-only">{{network.title}}</span>
-                        </a>
-                    {% endfor %}
-                </p>
-            </div>
-        </div><! --/row -->
-    </div><! --/container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h4>About</h4>
+        <div class="hline-w"></div>
+        <p>{{ site.about }}</p>
+      </div>
+      <div class="col-lg-4">
+        <h4>Social Links</h4>
+        <div class="hline-w"></div>
+        <p>
+          {% for network in site.social %}
+          <a href="{{ network.url }}" class="btn-social btn-outline">
+            <i class="fab fa-{{ network.title }}" aria-hidden="true"></i>
+            <span class="sr-only">{{network.title}}</span>
+          </a>
+          {% endfor %}
+        </p>
+      </div>
+      <div class="col-lg-4">
+       <h4>Recent Posts</h4>
+        <div class="hline-w"></div>
+        <ul style="padding: 0">
+          {% for post in site.posts limit:3 %}
+          <li style="margin: 0; padding: 0">
+            <p><a href="{{ post.url }}" style="color: {{ site.colors.footer_content }}">{{ post.title }}</a></p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <! --/row -->
+  </div>
+  <! --/container -->
 </div><! --/footerwrap -->
