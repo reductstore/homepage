@@ -28,7 +28,7 @@ docker run --env RS_API_TOKEN="Secret token"  ghcr.io/reduct-storage/reduct-stor
 
 Now, HTTP API requires a bearer token in HTTP headers, otherwise the client gets error 401. It is a very simple model,
 but in my experience it is enough fot 90% use cases. For more information,
-reed [here](https://docs.reduct-storage.dev/http-api/token-authentication)
+read [here](https://docs.reduct-storage.dev/http-api/token-authentication)
 
 ### Improved Server API
 
