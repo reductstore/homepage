@@ -2,7 +2,7 @@
 
 # Site settings
 title: Reduct Storage
-description: "Historian Object Storage with focus on AI/ML applications"
+description: A time series storage to keep history of blob data
 analytics: G-Y51RZRPE3X
 baseurl: "" #important: start with /
 url: "https://reduct-storage.dev"
@@ -107,7 +107,7 @@ members:
 #    img: client04.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Reduct Storage - 100% open source (AGPL) historian object storage with focus on AI/ML applications."
+about: "Reduct Storage - 100% open source (AGPL) time series storage to keep history of blob data "
 
 # Testimonial content. Shown on Home and About page.
 #testimonial:
