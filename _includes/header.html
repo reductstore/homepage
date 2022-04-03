@@ -1,16 +1,15 @@
-
 <div id="headerwrap">
   <div class="container">
     <div class="row">
-      <div class="col-lg-5 col-lg-offset-0 img">
+      <div class="col-lg-6 col-lg-offset-0 img">
         <img src="{{ "/assets/img/main_logo.png" | prepend: site.baseurl }}" class="img-responsive">
         <h3>
           {{site.description}}
         </h3>
       </div>
 
-      <div class="col-lg-7 col-lg-offset-0 text-left" >
-
+      <div class="col-lg-6 col-lg-offset-0 text-left hidden-xs">
+        <h3>Try to use it with SDKs: </h3>
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="active">
@@ -20,25 +19,23 @@
             <a href="#cpp" aria-controls="cpp" role="tab" data-toggle="tab">C++</a>
           </li>
           <li role="presentation">
-            <a href="#curl" aria-controls="curl" role="tab" data-toggle="tab">CURL</a>
+            <a href="#curl" aria-controls="curl" role="tab" data-toggle="tab">or CURL</a>
           </li>
         </ul>
 
         <!-- Tab panes -->
-        <div class="tab-content" id="UsageTab" >
-          <div role="tabpanel" class="tab-pane active" id="python" >
+        <div class="tab-content" id="UsageTab">
+          <div role="tabpanel" class="tab-pane active" id="python">
             {% include snippets/python.html %}
           </div>
-          <div role="tabpanel" class="tab-pane" id="cpp" >
+          <div role="tabpanel" class="tab-pane" id="cpp">
             {% include snippets/cpp.html %}
           </div>
           <div role="tabpanel" class="tab-pane" id="curl">
             {% include snippets/curl.html %}
-            </p>
           </div>
         </div>
-
       </div>
     </div><!-- /row -->
-  </div class="container"> <!-- /container -->
+  </div> <!-- /container -->
 </div><!-- /headerwrap -->

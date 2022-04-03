@@ -12,7 +12,7 @@ int main() {
 
   // Write some data
   IBucket::Time ts = IBucket::Time::clock::now();
-  [[maybe_unused]] auto write_err = bucket->Write("entry-1", "some_data1", ts);
+  auto write_err = bucket->Write("entry-1", "some_data1", ts);
 
   // Read data
   auto [blob, read_err] = bucket->Read("entry-1", ts);
