@@ -12,7 +12,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 @import url("prettyPhoto.css") screen;
 @import url("hoverex-all.css") screen;
-@import "fruity.css";
+@import "dracula.css";
 
 /*	################################################################
 	1. GENERAL STRUCTURES
@@ -152,8 +152,8 @@ a:focus {
 .btn-theme.active,
 .open .dropdown-toggle.btn-theme {
   color: #fff;
-  background-color: {{ site.colors.primary }};
-  border-color: {{ site.colors.primary }};
+  background-color: {{site.colors.primary }};
+  border-color: {{site.colors.primary }};
 }
 
 .dmbutton:hover,
@@ -203,7 +203,7 @@ a:focus {
 }
 
 .hline {
-	border-bottom: 2px solid {{ site.colors.secondary }};
+	border-bottom: 2px solid {{site.colors.secondary }};
 }
 
 .hline-w {
@@ -215,7 +215,7 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: {{ site.colors.primary }};
+	background-color: {{site.colors.primary }};
 	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;
@@ -243,7 +243,7 @@ a:focus {
 }
 
 #service i {
-	color: {{ site.colors.primary }};
+	color: {{site.colors.primary }};
 	font-size: 60px;
 	padding: 15px;
 }
