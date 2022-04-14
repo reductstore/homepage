@@ -1,0 +1,18 @@
+{% highlight javascript %}
+const {Client} = require("reduct-js")
+
+const main = async () => {
+  const client = new Client("http://127.0.0.1:8383");
+
+  const bucket = await client.createBucket("bucket");
+
+  const ts = Date.now() * 1000;
+  await bucket.write("entry-1", "Hello, World!", ts);
+  data = await bucket.read("entry-1", ts);
+  console.log(data);
+};
+
+main()
+  .then(() => console.log("done"))
+  .catch((err) => console.error("oops: ", err));
+{% endhighlight %}
