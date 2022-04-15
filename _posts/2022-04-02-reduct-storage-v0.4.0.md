@@ -6,7 +6,6 @@ author: Alexey Timin
 categories:
 - release
 - Storage
-- SDKs
 img: release.png
 thumb: release.png
 ---
