@@ -7,13 +7,13 @@ categories:
 - Storage
 - SDKs
 - Example
-img: js.png
-thumb: js.png
+img: iot.png
+thumb: mqtt.png
 
 ---
 
 [MQTT protocol][4] is very popular in IoT applications. It is a simple way to connect different data sources
-with your application by a using publish/subscribe model. Sometimes you may want to keep history of your MQTT data to
+with your application by using a publish/subscribe model. Sometimes you may want to keep history of your MQTT data to
 use
 it for model training, diagnostics or metrics. If your data sources provide different formats of data that can
 not be interpreted as time series of floats, Reduct Storage is that you need.
@@ -33,8 +33,8 @@ For this usage example we need to meet the following requirements:
 If you're an Ubuntu user, use this command to install the dependencies:
 
 ```
-sudo apt-get update
-sudo apt-get install docker-compose nodejs
+$ sudo apt-get update
+$ sudo apt-get install docker-compose nodejs
 ```
 
 ### Run MQTT Broker and Reduct Storage with Docker Compose
@@ -74,8 +74,8 @@ install [MQTT Client](https://www.npmjs.com/package/async-mqtt) and
 [JavaScript Client SDK](https://www.npmjs.com/package/reduct-js).
 
 ```
-npm init
-npm install --save reduct-js async-mqtt 
+$ npm init
+$ npm install --save reduct-js async-mqtt 
 ```
 
 When we have all the dependencies installed, we can write the script:
@@ -147,8 +147,8 @@ part
 of `mosquitto-clients` package:
 
 ```
-sudo apt-get install mosquitto-clients
-mosuitto_pub -t mqtt_data -m "Hello, world!"
+$ sudo apt-get install mosquitto-clients
+$ mosuitto_pub -t mqtt_data -m "Hello, world!"
 ```
 
 ### Getting data from Reduct Storage
@@ -217,10 +217,7 @@ I hope it was helpful. Thanks!
 * [JavaScript Client SDK][2]
 * [Mosquitto MQTT Broker][3]
 
-[1]:(https://docs.reduct-storage.dev)
-
-[2]:(https://reduct-js.readthedocs.io/en/latest/)
-
-[3]:(https://mosquitto.org/)
-
-[4]:(https://mqtt.org/)
+[1]:https://docs.reduct-storage.dev
+[2]:https://reduct-js.readthedocs.io/en/latest/
+[3]:https://mosquitto.org/
+[4]:https://mqtt.org/
