@@ -52,5 +52,5 @@ int main() {
 * [GitHub Repo][1]
 * [Documentation][2]
 
-[1]:(https://github.com/reduct-storage/reduct-cpp)
-[2]:(https://cpp.reduct-storage.dev)
+[1]:https://github.com/reduct-storage/reduct-cpp
+[2]:https://cpp.reduct-storage.dev

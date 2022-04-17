@@ -21,5 +21,5 @@ it supports all the features of [Reduct Storage v0.3.0](/release/storage/reduct-
 * [GitHub Repo][1]
 * [Documentation][2]
 
-[1]:(https://github.com/reduct-storage/reduct-cpp)
-[2]:(https://reduct-cpp.readthedocs.io/en/latest/)
+[1]:https://github.com/reduct-storage/reduct-cpp
+[2]:https://reduct-cpp.readthedocs.io/en/latest/

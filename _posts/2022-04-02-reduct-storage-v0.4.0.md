@@ -23,10 +23,10 @@ and the CLI admin tool.
 
 <!--more-->
 
-#### Documentations
+### Documentations
 
 * [Reduct Storage][1]
 * [Client C++ SDK][2]
 
-[1]:(https://docs.reduct-storage.dev)
-[2]:(https://reduct-cpp.readthedocs.io/en/latest/)
+[1]:https://docs.reduct-storage.dev
+[2]:https://reduct-cpp.readthedocs.io/en/latest/
