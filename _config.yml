@@ -2,7 +2,7 @@
 
 # Site settings
 title: Reduct Storage
-description: A time series storage to keep history of blob data
+description: A time series database for any data
 analytics: G-Y51RZRPE3X
 baseurl: "" #important: start with /
 url: "https://reduct-storage.dev"
