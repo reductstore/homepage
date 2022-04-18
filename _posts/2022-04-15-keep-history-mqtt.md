@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to keep history of MQTT messages in Reduct Storage"
+title: "How to keep a history of MQTT messages in Reduct Storage"
 date: 2022-04-14 00:00:46
 author: Alexey Timin
 categories:
@@ -12,19 +12,19 @@ thumb: mqtt.png
 
 ---
 
-[MQTT protocol][4] is very popular in IoT applications. It is a simple way to connect different data sources
-with your application by using a publish/subscribe model. Sometimes you may want to keep history of your MQTT data to
+The [MQTT protocol][4] is very popular in IoT applications. It is a simple way to connect different data sources
+with your application by using a publish/subscribe model. Sometimes you may want to keep a history of your MQTT data to
 use
 it for model training, diagnostics or metrics. If your data sources provide different formats of data that can
-not be interpreted as time series of floats, Reduct Storage is that you need.
+not be interpreted as time series of floats, Reduct Storage is what you need.
 
 Let's make a simple MQTT application to see how it works.
 
 <!--more-->
 
-### Pre-requirements
+### Prerequisites
 
-For this usage example we need to meet the following requirements:
+For this usage example we have the following requirements:
 
 * Linux AMD64
 * Docker and Docker Compose
@@ -64,7 +64,7 @@ Then run the configuration:
 docker-compose up
 ```
 
-Docker Compose downloaded the images and run the containers. Pay attention that we published ports 1883 for MQTT
+Docker Compose downloaded the images and ran the containers. Pay attention that we published ports 1883 for MQTT
 protocol and 8383 for [Reduct HTTP API](https://docs.reduct-storage.dev/http-api).
 
 ### Write NodeJS script
@@ -93,15 +93,15 @@ MQTT.connectAsync('tcp://localhost:1883').then(async (mqttClient) => {
   mqttClient.on('message', async (topic, msg) => {
     const data = msg.toString();
     await bucket.write('mqtt_data', data);
-    console.log('Received message "%s" from topic "%s" is written', data,
+    console.log('Received message "%s" from topic "%s" was written', data,
         topic);
   });
 
 }).catch(error => console.error(error));
 ```
 
-Let's look at the code in detail. First, we have to connect the MQTT broker
-and subscribe a topic. The topic name just random string, which producers should know.
+Let's look at the code in detail. First, we have to connect to the MQTT broker
+and subscribe to a topic. The topic name just random string, which producers should know.
 In our case it is `mqtt_data`:
 
 ```javascript
@@ -114,8 +114,8 @@ MQTT.connectAsync('tcp://localhost:1883').then(async (mqttClient) => {
 ```
 
 If the MQTT connection is successful, we can start dealing with Reduct Storage.
-To start writing data there, we need a bucket. We create a bucket with name `mqtt` or
-get the existing one:
+To start writing data there, we need a bucket. We create a bucket with the name `mqtt` or
+get an existing one:
 
 ```javascript
 const reductClient = new Client('http://localhost:8383');
@@ -129,22 +129,21 @@ for event `message`, to catch it. Then we write the message to entry `mqtt_data`
 mqttClient.on('message', async (topic, msg) => {
   const data = msg.toString();
   await bucket.write('mqtt_data', data);
-  console.log('Received message "%s" from topic "%s" is written', data,
+  console.log('Received message "%s" from topic "%s" was written', data,
       topic);
 });
 ```
 
-When we call `bucket.write` we create an entry in the bucket if it hasn't existed yet.
-Then we write data to the entry with current timestamp.
-Now our MQTT data are safe and sound in the storage, and we can access them by using
+When we call `bucket.write` we create an entry in the bucket if it doesn't exist yet.
+Then we write data to the entry with the current timestamp.
+Now our MQTT data is safe and sound in the storage, and we can access them by using
 the same [SDK][2].
 
 ### Publish data to MQTT topic
 
 When you launch the script, it does nothing because there is no data from MQTT. You have to publish something to topic
 `mqtt_data`. I prefer to use [mosquitto_pub](https://mosquitto.org/man/mosquitto_pub-1.html). For Ubuntu users, it is a
-part
-of `mosquitto-clients` package:
+part of the `mosquitto-clients` package:
 
 ```
 $ sudo apt-get install mosquitto-clients
@@ -185,7 +184,7 @@ To read the latest record in the entry is very easy:
 let data = await bucket.read('mqtt_data');
 ```
 
-But to take some random record, you have to know its timestamp. A typical usage case is to read data for some
+But to take some random record, you have to know its timestamp. A typical use case would be to read data for some
 timeinterval. You should use method `Bucket.list` to get timestamps of records for the interval. Then you can
 read them by using `Bucket.read`:
 
@@ -200,16 +199,16 @@ for (const record of records) {
 }
 ```
 
-Pay attention, that the storage uses timestamps with microsecond precision, so we can't use `Date` class and `number` type.
+Pay attention, the storage uses timestamps with microsecond precision, so we can't use `Date` class and `number` type.
 What is why we use `BigInt`.
 
 ### Conclusion
 
-As you can see, MQTT protocol and Reduct Storage very simple technology that can be used together very easily in NodeJS.
+As you can see, the MQTT protocol and Reduct Storage very simple technologies that can be used together very easily in NodeJS.
 You can find the source code of the example [here](https://github.com/reduct-storage/reduct-mqtt-example). If you have any
-questions or problems with making it run. Feel free to make [an issue](https://github.com/reduct-storage/reduct-js/issues/new).
+questions or problems running it. Feel free to make [an issue](https://github.com/reduct-storage/reduct-js/issues/new).
 
-I hope it was helpful. Thanks!
+I hope this tutorial has been helpful. Thanks!
 
 ### Links
 
