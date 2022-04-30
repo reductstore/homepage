@@ -22,7 +22,7 @@ and the CLI admin tool.
 
 <!--more-->
 
-### Documentations
+### Documentation
 
 * [Reduct Storage][1]
 * [Client C++ SDK][2]
