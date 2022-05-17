@@ -18,14 +18,16 @@ have been released!
 
 A few weeks ago, we started developing [Web Console](https://github.com/reduct-storage/web-console)
 for monitoring and managing the storage engine from a web browser. Now it is embedded into Reduct Storage and you can get it 
-with its docker image or explore it [here](https://play.reduct-storage.dev). It is only version 
-[0.1.0](https://github.com/reduct-storage/web-console/releases/tag/v0.1.0), so don't expect too much.
+with its docker image or explore it [here](https://play.reduct-storage.dev).
+
+P.S. It is only version 
+[0.1.0](https://github.com/reduct-storage/web-console/releases/tag/v0.1.0), so don't expect too much..😅
 
 <!--more-->
 
 ### Default Settings
 
-Sometimes is useful to know the default settings for a new bucket which can be actually tweaked during the compilation.
+Sometimes it is useful to know the default settings for a new bucket which can be actually tweaked during the compilation.
 Now the HTTP API provides all the default settings in `GET /info` endpoint:
 
 ```shell
