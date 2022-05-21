@@ -4,8 +4,8 @@ title: "C++ Client SDK v0.3.0 has been released"
 date: 2022-03-19 00:00:46
 author: Alexey Timin
 categories:
-- release
-- SDKs
+- releases
+- sdks 
 img: cpp.png
 thumb: cpp.png
 ---

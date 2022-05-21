@@ -4,8 +4,8 @@ title: "Client SDK for C++ released"
 date: 2022-02-11 00:00:46
 author: Alexey Timin
 categories:
-- release
-- SDKs
+- releases
+- sdks
 img: cpp.png
 thumb: cpp.png
 ---

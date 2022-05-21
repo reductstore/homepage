@@ -4,8 +4,8 @@ title: "Reduct Storage: Bugfix release 0.2.1"
 date: 2022-03-07 00:00:46 
 author: Alexey Timin 
 categories:
-- release
-- Storage 
+- releases
+- storage 
 img: bugfix.png
 thumb: bugfix.png
 ---

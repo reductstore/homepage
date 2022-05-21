@@ -4,8 +4,8 @@ title: "Reduct Storage 0.5.0 has been released"
 date: 2022-05-17 00:00:46 
 author: Alexey Timin 
 categories:
-- release
-- Storage
+- releases
+- storage
 img: release.png
 thumb: release.png
 ---
