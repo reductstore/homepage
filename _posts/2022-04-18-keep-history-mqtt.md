@@ -4,9 +4,9 @@ title: "How to keep a history of MQTT messages in Reduct Storage"
 date: 2022-04-18 00:00:46
 author: Alexey Timin, Ciaran Moyne
 categories:
-- Storage
-- SDKs
-- Example
+- storage
+- sdks
+- tutorials
 img: iot.png
 thumb: mqtt.png
 
