@@ -9,7 +9,8 @@ categories:
 - tutorials
 img: iot.png
 thumb: mqtt.png
-
+image:
+  path: assets/img/blog/iot.png
 ---
 
 The [MQTT protocol][4] is very popular in IoT applications. It is a simple way to connect different data sources

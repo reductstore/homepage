@@ -8,6 +8,8 @@ categories:
 - storage
 img: iot2.jpg
 thumb: nginx.png
+image:
+    path: assets/img/blog/iot2.jpg
 ---
 
 I think, [NGINX][1] doesn't need any introductions. It is one of the most widely used HTTP servers and reverse proxies.
