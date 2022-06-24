@@ -125,3 +125,9 @@ plugins:
 twitter:
   username: ReductStorage
   card: summary
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: assets/img/logo_default.jpg
