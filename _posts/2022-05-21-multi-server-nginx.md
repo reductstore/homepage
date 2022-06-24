@@ -6,10 +6,10 @@ author: Alexey Timin, Ciaran Moyne
 categories:
 - tutorials
 - storage
-img: iot2.jpg
+img: iot2.png
 thumb: nginx.png
 image:
-    path: assets/img/blog/iot2.jpg
+    path: assets/img/blog/iot2.png
 ---
 
 I think, [NGINX][1] doesn't need any introductions. It is one of the most widely used HTTP servers and reverse proxies.
