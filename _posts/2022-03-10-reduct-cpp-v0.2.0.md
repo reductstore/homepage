@@ -12,7 +12,7 @@ image:
 ---
 Hey everyone!
 
-A week ago I've released [Reduct Storage v0.2.0](https://reduct-storage.dev/release/storage/reduct-storage-v0.2.0/).
+A week ago I've released [Reduct Storage v0.2.0](https://github.com/reduct-storage/reduct-storage/releases/tag/v0.2.0).
 Now I've updated its C++ SDK Client and released version [v0.2.0](https://github.com/reduct-storage/reduct-cpp/releases/tag/v0.2.0).
 The library completely implements Reduct Storage HTTP API v0.2.0, and you can use it with the token authorization:
 

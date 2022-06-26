@@ -54,4 +54,4 @@ int main() {
 * [Documentation][2]
 
 [1]:https://github.com/reduct-storage/reduct-cpp
-[2]:https://cpp.reduct-storage.dev
+[2]:https://reduct-cpp.readthedocs.io/en/latest/
