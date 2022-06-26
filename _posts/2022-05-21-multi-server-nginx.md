@@ -6,8 +6,7 @@ author: Alexey Timin, Ciaran Moyne
 categories:
 - tutorials
 - storage
-img: iot2.png
-thumb: nginx.png
+
 image:
     path: assets/img/blog/iot2.png
     height: 400

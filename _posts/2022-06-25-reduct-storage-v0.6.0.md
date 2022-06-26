@@ -7,8 +7,6 @@ categories:
 - releases
 - storage
 
-img: space_x.jpg
-thumb: release.png 
 image:
   path: assets/img/blog/space_x.jpg
 
@@ -36,12 +34,14 @@ As a solution, we added `max_record_size` to the bucket settings to start a new 
 
 ### Web Console v0.2.1
 
+![Reduct Storage Web Console ](https://github.com/reduct-storage/web-console/raw/main/readme/dashboard.png)
+
 The release is delivered with Web Console [v0.2.1](https://github.com/reduct-storage/web-console/releases/tag/v0.2.1).
 Now you can use it with the API token authentication and manage the bucket settings.
 
-![Reduct Storage Web Console ](https://github.com/reduct-storage/web-console/raw/main/readme/dashboard.png)
+### Links
 
-
-
+* [Full Changelog](https://github.com/reduct-storage/reduct-storage/blob/main/CHANGELOG.md)
+* [Getting Started](https://docs.reduct-storage.dev/)
 
 

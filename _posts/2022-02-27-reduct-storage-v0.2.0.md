@@ -6,8 +6,9 @@ author: Alexey Timin
 categories:
 - releases
 - storage 
-img: release.png
-thumb: release.png
+
+image:
+  path: assets/img/blog/release.png
 ---
 Hey everyone!
 

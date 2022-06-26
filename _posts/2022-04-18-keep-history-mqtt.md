@@ -7,8 +7,7 @@ categories:
 - storage
 - sdks
 - tutorials
-img: iot.png
-thumb: mqtt.png
+
 image:
   path: assets/img/blog/iot.png
 ---

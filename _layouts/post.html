@@ -9,10 +9,10 @@ layout: default
         <! -- SINGLE POST -->
         <div class="col-lg-8">
             <! -- Blog Post  -->
-            <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>
+            <p><img class="img-responsive" src="/{{ page.image.path }}"></p>
             <a href="{{ page.url | prepend: site.baseurl }}"><h2 class="ctitle">{{ page.title }}</h2></a>
             <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>
-              
+
             {{ content }}
 
             <div class="spacing"></div>
@@ -21,10 +21,10 @@ layout: default
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-tumblr"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>		 		
+                <a href="#"><i class="fa fa-google-plus"></i></a>
             </p> -->
         </div><! --/col-lg-8 -->
-        
+
         {% include sidebar.html %}
 
     </div><! --/row -->

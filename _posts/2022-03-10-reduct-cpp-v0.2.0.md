@@ -6,8 +6,9 @@ author: Alexey Timin
 categories:
 - releases
 - sdks
-img: cpp.png
-thumb: cpp.png
+
+image:
+  path: assets/img/blog/cpp.png
 ---
 Hey everyone!
 

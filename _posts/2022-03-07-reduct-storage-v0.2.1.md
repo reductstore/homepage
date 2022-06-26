@@ -6,8 +6,9 @@ author: Alexey Timin
 categories:
 - releases
 - storage 
-img: bugfix.png
-thumb: bugfix.png
+
+image:
+  path: assets/img/blog/bugfix.png
 ---
 Hey everyone!
 
