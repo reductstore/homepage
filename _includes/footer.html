@@ -16,10 +16,14 @@
             <span class="sr-only">{{network.title}}</span>
           </a>
           {% endfor %}
+          <a href="https://github.com/orgs/reduct-storage/discussions" class="btn-social btn-outline">
+            <i class="fas fa-comments" aria-hidden="true"></i>
+            <span class="sr-only">GitHub Discussions</span>
+          </a>
         </p>
       </div>
       <div class="col-lg-4">
-       <h4>Recent Posts</h4>
+        <h4>Recent Posts</h4>
         <div class="hline-w"></div>
         <ul style="padding: 0">
           {% for post in site.posts limit:3 %}
