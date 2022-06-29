@@ -8,7 +8,7 @@ using reduct::IClient;
 int main() {
   auto client = IClient::Build("https://play.reduct-storage.dev");
   // Create a bucket
-  auto [bucket, create_err] = client->CreateBucket("bucket");
+  auto [bucket, create_err] = client->GetOrCreateBucket("bucket");
 
   // Write some data
   IBucket::Time ts = IBucket::Time::clock::now();
