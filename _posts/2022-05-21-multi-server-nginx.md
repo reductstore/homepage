@@ -11,6 +11,7 @@ image:
     path: assets/img/blog/iot2.png
     height: 400
     width: 750
+    alt: Internet of Things 
 ---
 
 I think, [NGINX][1] doesn't need any introductions. It is one of the most widely used HTTP servers and reverse proxies.

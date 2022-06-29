@@ -9,7 +9,7 @@ layout: default
         <! -- SINGLE POST -->
         <div class="col-lg-8">
             <! -- Blog Post  -->
-            <p><img class="img-responsive" src="/{{ page.image.path }}"></p>
+            <p><img class="img-responsive" src="/{{ page.image.path }}" alt="{{page.image.alt}}"></p>
             <a href="{{ page.url | prepend: site.baseurl }}"><h2 class="ctitle">{{ page.title }}</h2></a>
             <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>
 

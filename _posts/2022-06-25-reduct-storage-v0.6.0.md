@@ -9,6 +9,7 @@ categories:
 
 image:
   path: assets/img/blog/space_x.jpg
+  alt: Launched rocket X Space
 
 ---
 Hey everyone!
