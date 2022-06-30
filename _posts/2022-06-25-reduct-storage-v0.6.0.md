@@ -17,13 +17,13 @@ Hey everyone!
 Reduct Storage [v0.6.0](https://github.com/reduct-storage/reduct-storage/releases/tag/v0.6.0) have been released! 
 The storage engine was tested in production environment, and we fixed and changed many things to make it work stable with good performance.
 
-### Support FSX File System
+### Support XFS File System
 
-Our production environment uses FSX file system for storing data, and we met there issue [#98](https://github.com/reduct-storage/reduct-storage/issues/98). 
+Our production environment uses XFS file system for storing data, and we met there issue [#98](https://github.com/reduct-storage/reduct-storage/issues/98). 
 The problem was that the file system pre-allocates disk space for a file automatically. 
 However, the engine does the same that caused issues when a block is appended with the last record. 
 We've changed the algorithm and don't append blocks anymore. 
-It works perfectly now for EXT4 and FSX.
+It works perfectly now for EXT4 and XFS.
 
 <!--more-->
 
