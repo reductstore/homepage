@@ -2,7 +2,7 @@
 
 # Site settings
 title: Reduct Storage
-description: A time series database for any data
+description: A time series database for big data
 analytics: G-Y51RZRPE3X
 baseurl: "" #important: start with /
 url: "https://reduct-storage.dev"
@@ -107,7 +107,9 @@ members:
 #    img: client04.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Reduct Storage - 100% open source (AGPL) time series storage to keep a history of blob data"
+about: |
+  Reduct Storage is a time series database for big data. It has no limitation on the size of stored objects or the volume of stored data. 
+  It has a simple HTTP API and provides random access to data via a timestamp or time interval.
 
 # Testimonial content. Shown on Home and About page.
 #testimonial:
