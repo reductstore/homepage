@@ -5,7 +5,8 @@ date: 2022-06-25 00:00:46
 author: Alexey Timin 
 categories:
 - releases
-- storage
+- sdks
+
 
 image:
   path: assets/img/blog/cpp.png
@@ -20,7 +21,7 @@ It supports Reduct Storage HTTP v0.6 and introduces some new features:
 
 ## Data Streaming
 
-Now you can write and read data by chunks:
+Now you can write and read data in chunks:
 
 ```cpp
 
