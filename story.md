@@ -11,10 +11,10 @@ production processes.
 We couldn't use classical TSDBs because they focused on measurement from sensors, but we had heavy images from computer
 vision cameras and 48kHz sound as well. We needed a format agnostic blob storage for our data zoo, something like S3
 but with API which provides access with timestamps and time intervals.
-Moreover, the disk space on our edge devices was critical for us and data reduction was a need.
+Moreover, the disk space on our edge devices was critical for us and data reduction was a must.
 
 In December 2021, Alexey Timin launched the Reduct Storage project and started developing a prototype
-of [the engine][1] in modern C++20.
+of [a storage engine][1] in modern C++20.
 
 ### Prototyping And Idea Approval
 
@@ -29,7 +29,7 @@ who work in the AI branch were positive about the general idea.
 
 ### Experimental Implementation
 
-Having had the working battle proved solution and approval, we kept working on the storage engine end its ecosystem. We
+Having had the working battle proved solution and approval, we kept working on the storage engine and its ecosystem. We
 promoted the project and grow our community. In September 2022, we already had Client SDKs for [C++][3], [Python][4]
 , [JavaScript][5]
 and an embedded [WebConsole][6]. We stopped integrating new features into the experimental version 0 and started planing
