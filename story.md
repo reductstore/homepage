@@ -29,7 +29,7 @@ who work in the AI branch were positive about the general idea.
 
 ### Experimental Implementation
 
-The working battle proved solution and approval motived us to keep working on the storage engine end its ecosystem. We
+Having had the working battle proved solution and approval, we kept working on the storage engine end its ecosystem. We
 promoted the project and grow our community. In September 2022, we already had Client SDKs for [C++][3], [Python][4]
 , [JavaScript][5]
 and an embedded [WebConsole][6]. We stopped integrating new features into the experimental version 0 and started planing
@@ -40,7 +40,7 @@ The open sources community was also growing. We started receiving bug fixes, doc
 ### What Next?
 
 You can use the experimental implementation (v0) for any purposes, but it doesn't have many enterprise features like user authorisation or
-replication. We're planning to add them in the next major version. See our [roadmap](/roadmap)
+replication. We're planning to add them in the next major version. See our [roadmap](/roadmap.html)
 
 [1]:https://github.com/reduct-storage/reduct-storage
 
