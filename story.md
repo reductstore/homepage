@@ -6,12 +6,12 @@ permalink: /story
 
 ### From A Problem To An Idea
 
-An idea to create a new timeseries database came from our experience in development of AI applications for industrial
+The idea to create a new timeseries database came from our experience in development of AI applications for industrial
 production processes.
-We couldn't use classical TSDBs because they focused on measurement from sensors, but we had heavy images from computer
+We couldn't use classical TSDBs because they focused on measurement from sensors, but we had large images from computer
 vision cameras and 48kHz sound as well. We needed a format agnostic blob storage for our data zoo, something like S3
-but with API which provides access with timestamps and time intervals.
-Moreover, the disk space on our edge devices was critical for us and data reduction was a must.
+but with an API which provided access with timestamps and time intervals.
+Moreover, the disk space on our edge devices was critical to us and data reduction was a must.
 
 In December 2021, Alexey Timin launched the Reduct Storage project and started developing a prototype
 of [a storage engine][1] in modern C++20.
@@ -24,18 +24,18 @@ After tons of bug fixes we got a working engine which did everything what we nee
 
 Meanwhile, Ciarán Moyne joined the project to support it with Client SDKs and CLI tools. Together we wrote a motivation
 article ["Why we need a new database for Industry 4.0][2]
-to tell different communities about the project and get feedback. We didn't explode the Internet of course, but people
+to tell different communities about the project and get feedback. We didn't blow up the Internet of course, but people
 who work in the AI branch were positive about the general idea.
 
 ### Experimental Implementation
 
-Having had the working battle proved solution and approval, we kept working on the storage engine and its ecosystem. We
-promoted the project and grow our community. In September 2022, we already had Client SDKs for [C++][3], [Python][4]
+Now that we had a working battle-proven solution and approval, we kept working on the storage engine and its ecosystem. We
+promoted the project and grew our community. By September 2022, we already had Client SDKs for [C++][3], [Python][4]
 , [JavaScript][5]
 and an embedded [WebConsole][6]. We stopped integrating new features into the experimental version 0 and started planing
 version 1.0 which should be ready for a commercial usage.
 
-The open sources community was also growing. We started receiving bug fixes, documentation improvements and questions.
+The open source community was also growing. We started receiving bug fixes, documentation improvements and questions.
 
 ### What Next?
 
