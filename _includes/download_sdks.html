@@ -1,0 +1,23 @@
+<h2>Client SDKs</h2>
+<div class="hline"></div>
+
+<h4>Python</h4>
+<pre>
+    <code>pip install -U reduct-py</code>
+</pre>
+
+<h4>Node.js</h4>
+<pre>
+    <code>npm i reduct-js</code>
+</pre>
+
+<h4>C++ (cmake)</h4>
+<pre>
+    <code>include(FetchContent)
+    FetchContent_Declare(
+            ReductCpp
+            GIT_REPOSITORY https://github.com/reduct-storage/reduct-cpp.git
+            GIT_TAG {{ site.projects.reduct_storage.version }}
+    )
+    find_package(ReductCpp)</code>
+</pre>

@@ -1,0 +1,62 @@
+---
+layout: page
+title: Download
+permalink: /download
+---
+<p>
+    Reduct Storage supports Linux, macOs and Windows on AMD64 platform.
+</p>
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+        <a href="#linux" aria-controls="python" role="tab" data-toggle="tab">Linux</a>
+    </li>
+    <li role="presentation">
+        <a href="#macOs" aria-controls="js" role="tab" data-toggle="tab">macOs</a>
+    </li>
+    <li role="presentation">
+        <a href="#windows" aria-controls="cpp" role="tab" data-toggle="tab">Windows</a>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content" id="UsageTab">
+    <div role="tabpanel" class="tab-pane active" id="linux">
+        <h2>Reduct Storage</h2>
+        <div class="hline"></div>
+
+        <h4>Binary</h4>
+
+        <pre><code>    wget https://github.com/reduct-storage/reduct-storage/releases/download/{{ site.projects.reduct_storage.version }}/reduct-storage.linux-amd64.tar.gz
+    tar xfv reduct-storage.linux-amd64.tar.gz
+    RS_DATA_PATH=./data ./reduct-storage</code></pre>
+        <h4>Docker</h4>
+        <pre><code>    docker run -p 8383:8383 -v ${PWD}/data:/data reductstorage/engine:latest</code></pre>
+        {% include download_sdks.html %}
+    </div>
+    <div role="tabpanel" class="tab-pane" id="macOs">
+        <h2>Reduct Storage</h2>
+        <div class="hline"></div>
+
+        <h4>Binary</h4>
+        <pre><code>    wget https://github.com/reduct-storage/reduct-storage/releases/download/{{ site.projects.reduct_storage.version }}/reduct-storage.macos-amd64.tar.gz
+    tar xfv reduct-storage.linux-amd64.tar.gz
+    RS_DATA_PATH=./data ./reduct-storage</code></pre>
+        {% include download_sdks.html %}
+    </div>
+    <div role="tabpanel" class="tab-pane" id="windows">
+        <h2>Reduct Storage</h2>
+        <div class="hline"></div>
+
+        <h4>Binary</h4>
+        <pre><code>    Invoke-WebRequest -Uri  https://github.com/reduct-storage/reduct-storage/releases/download/{{ site.projects.reduct_storage.version }}/reduct-storage.win-amd64.zip -OutFile reduct-storage.zip
+    Expand-Archive -LiteralPath reduct-storage.zip -DestinationPath .
+    .\reduct-storage.exe</code></pre>
+
+        {% include download_sdks.html %}
+    </div>
+</div>
+<p>
+    All the binaries and source code are available on <a
+        href="https://github.com/reduct-storage/reduct-storage/releases/tag/{{ site.projects.reduct_storage.version }}">the
+    release page</a>
+</p>

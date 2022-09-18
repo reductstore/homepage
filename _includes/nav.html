@@ -15,7 +15,9 @@
                 <li {% if page.title=="Home" %}class="active" {% endif %}><a href="{{"/" | prepend: site.baseurl
                     }}">HOME</a>
                 </li>
-
+                <li {% if page.title=="Download" %}class="active" {% endif %}><a href="{{"/download" | prepend: site.baseurl
+                    }}">DOWNLOAD</a>
+                </li>
                 <li><a href="https://dev.to/reduct-storage">BLOG</a></li>
                 <li><a href="https://github.com/reduct-storage/">GITHUB</a></li>
                 <li><a href="https://docs.reduct-storage.dev">DOCS</a></li>
