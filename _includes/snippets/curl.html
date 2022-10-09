@@ -1,15 +1,18 @@
 {% highlight ruby%}
+export HEADER="Authorization: Bearer reduct" # use `reduct` token
+export API_PATH="https://play.reduct-storage.dev/api/v1"
 # Create a bucket
 curl -d "{\"quota_type\":\"FIFO\", \"quota_size\":10000}" \
-  -X POST \
-  -a https://play.reduct-storage.dev/b/my_data
+  -X POST --header "${HEADER}" \
+  -a "${API_PATH}"/b/my_data
 
 # Write some data
+export TIME=`date +%s000000`
 curl -d "some_data" \
-  -X POST \
-  -a https://play.reduct-storage.dev/b/my_data/entry_1?ts=10000
+  -X POST --header "${HEADER}" \
+  -a ${API_PATH}/b/my_data/entry_1?ts=${TIME}
 
-# Read the data by timestamp
-curl https://play.reduct-storage.dev/b/my_data/entry_1?ts=10000
-
+# Read the data by using its timestamp
+curl --header "${HEADER}" \
+  -a ${API_PATH}/b/my_data/entry_1?ts=${TIME}
 {% endhighlight %}
