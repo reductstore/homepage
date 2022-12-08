@@ -22,7 +22,7 @@ excerpt_separator: <!--more--> #use this in posts to define how long the excerpt
 
 projects:
   reduct_storage:
-    version: v1.0.1
+    version: v1.1.1
 
 colors:  #in hex code if not noted else
   primary: "#231b49" #"#F70031"
