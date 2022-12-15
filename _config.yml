@@ -2,7 +2,7 @@
 
 # Site settings
 title: Reduct Storage
-description: A time series database for big data
+description: A time series database for storing and managing large amount of blob data
 analytics: G-Y51RZRPE3X
 baseurl: "" #important: start with /
 url: "https://reduct-storage.dev"
@@ -24,7 +24,7 @@ projects:
   reduct_storage:
     version: v1.1.1
 
-colors:  #in hex code if not noted else
+colors: #in hex code if not noted else
   primary: "#231b49" #"#F70031"
   primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
   secondary: "#384452" #"#33004D"
@@ -107,8 +107,10 @@ members:
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
 about: |
-  Reduct Storage is a time series database for big data. It has no limitation on the size of stored objects.
-  It provides a simple HTTP API and is optimized for random data reads via a timestamp or larger chunks via time intervals.
+  Reduct Storage is a time series database designed specifically for storing and managing large amount of blob data. 
+  It has high performance for writing and real-time querying, making it suitable for edge computing, computer vision, and IoT applications.
+  Reduct Storage is 100% open source under GNU AGPL v3.
+
 
 # Testimonial content. Shown on Home and About page.
 #testimonial:
