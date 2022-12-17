@@ -5,27 +5,34 @@ layout: default
 {% include wrap.html %}
 
 <div class="container mtb">
-    <div class="row">
-        <! -- SINGLE POST -->
-        <div class="col-lg-8">
-            <! -- Blog Post  -->
-            <p><img class="img-responsive" src="/{{ page.image.path }}" alt="{{page.image.alt}}"></p>
-            <a href="{{ page.url | prepend: site.baseurl }}"><h2 class="ctitle">{{ page.title }}</h2></a>
-            <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>
+  <div class="row">
+    <! -- SINGLE POST -->
+    <div class="col-lg-8">
+      <! -- Blog Post -->
+      <p><img class="img-responsive" src="/{{ page.image.path }}" alt="{{page.image.alt}}"></p>
+      <a href="{{ page.url | prepend: site.baseurl }}"><h2 class="ctitle">{{ page.title }}</h2></a>
+      <p>
+        <csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall>
+        {% if page.canonical_url %}
+        <csmall>| Orginaly published at <a href="{{page.canonical_url}}">{{page.canonical_url}}</a></csmall>
+      </p>
+      {% endif %}
 
-            {{ content }}
+      {{ content }}
 
-            <div class="spacing"></div>
-            <!-- <h6>SHARE:</h6>
-            <p class="share">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-tumblr"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-            </p> -->
-        </div><! --/col-lg-8 -->
+      <div class="spacing"></div>
+      <!-- <h6>SHARE:</h6>
+      <p class="share">
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-tumblr"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+      </p> -->
+    </div>
+    <! --/col-lg-8 -->
 
-        {% include sidebar.html %}
+    {% include sidebar.html %}
 
-    </div><! --/row -->
+  </div>
+  <! --/row -->
 </div><! --/container -->
