@@ -29,6 +29,8 @@ something and shows the results in the user interface.
 
 So far it isn’t too complicated, let’s see how we can deal with the data here.
 
+<!--more-->
+
 ## File System
 
 If an application needs to save an image from a CV camera, it can simply save it on a hard drive. We can use a timestamp
