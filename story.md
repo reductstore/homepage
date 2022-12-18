@@ -13,7 +13,7 @@ vision cameras and 48kHz sound as well. We needed a format agnostic blob storage
 but with an API which provided access with timestamps and time intervals.
 Moreover, the disk space on our edge devices was critical to us and data reduction was a must.
 
-In December 2021, Alexey Timin launched the Reduct Storage project and started developing a prototype
+In December 2021, Alexey Timin launched the ReductStore project and started developing a prototype
 of [a storage engine][1] in modern C++20.
 
 ### Prototyping And Idea Approval
@@ -42,14 +42,14 @@ The open source community was also growing. We started receiving bug fixes, docu
 You can use the experimental implementation (v0) for any purposes, but it doesn't have many enterprise features like user authorisation or
 replication. We're planning to add them in the next major version. See our [roadmap](/roadmap.html)
 
-[1]:https://github.com/reduct-storage/reduct-storage
+[1]:https://github.com/reductstore/reduct-storage
 
 [2]:https://medium.com/@atimin/why-we-need-a-new-database-for-industry-4-0-f3e274dba145
 
-[3]:https://github.com/reduct-storage/reduct-cpp
+[3]:https://github.com/reductstore/reduct-cpp
 
-[4]:https://github.com/reduct-storage/reduct-py
+[4]:https://github.com/reductstore/reduct-py
 
-[5]:https://github.com/reduct-storage/reduct-js
+[5]:https://github.com/reductstore/reduct-js
 
-[6]:https://github.com/reduct-storage/web-console
+[6]:https://github.com/reductstore/web-console

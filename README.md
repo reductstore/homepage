@@ -1,4 +1,4 @@
-# Official Reduct Storage Homepage
+# Official ReductStore Homepage
 
 Run locally:
 

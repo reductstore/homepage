@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "How to integrate Reduct Storage to your C++ application"
+title: "How to integrate ReductStore to your C++ application"
 date: 2022-12-17 00:00:46
 author: Alexey Timin
-canonical_url: "https://cpp.reduct-storage.dev/en/latest/docs/quick-start/"
+canonical_url: "https://cpp.reduct.store/en/latest/docs/quick-start/"
 categories:
   - tutorials
   - sdks 
@@ -11,28 +11,28 @@ image:
   path: assets/img/blog/cpp-sdk-snippet.jpeg
 ---
 
-This guide will help you get started with the [Reduct Storage C++ SDK](https://github.com/reduct-storage/reduct-cpp).
+This guide will help you get started with the [ReductStore C++ SDK](https://github.com/reductstore/reduct-cpp).
 
 ## Requirements
 
-The Reduct Storage C++ SDK is written in C++20 and uses CMake as a build system. To install it, you will need:
+The ReductStore C++ SDK is written in C++20 and uses CMake as a build system. To install it, you will need:
 
 * C++ compiler with C++20 support (we use GCC-11.2)
 * cmake 3.18 or higher
 * conan 1.40 or higher (it is optional, but [**conan**](https://conan.io) is a convenient package manager)
 
 Currently, we have only tested the SDK on Linux AMD64, but if you need to port it to another
-operating system or platform, you can create an [issue](https://github.com/reduct-storage/reduct-cpp/issues/new/choose)
+operating system or platform, you can create an [issue](https://github.com/reductstore/reduct-cpp/issues/new/choose)
 for assistance.
 
 ## Installing
 
-To install the Reduct Storage C++ SDK, follow these steps:
+To install the ReductStore C++ SDK, follow these steps:
 
 <!--more-->
 
 ```
-git clone https://github.com/reduct-storage/reduct-cpp.git
+git clone https://github.com/reductstore/reduct-cpp.git
 cd reduct-cpp
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
@@ -143,6 +143,6 @@ You can then run the example with the following command:
 ## Next Steps
 
 You can find more detailed documentation and examples
-in [the Reference API section](https://cpp.reduct-storage.dev/en/latest/docs/api_reference/). You can also
-refer to the [Reduct Storage HTTP API](https://docs.reduct-storage.dev/http-api) documentation for a complete reference
+in [the Reference API section](https://cpp.reduct.store/en/latest/docs/api_reference/). You can also
+refer to the [ReductStore HTTP API](https://docs.reduct.store/http-api) documentation for a complete reference
 of the available API calls.

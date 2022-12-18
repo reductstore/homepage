@@ -14,7 +14,7 @@ image:
 When it comes to computer vision, data storage is a critical component. You need to be able to store images for model
 training, as well as the results of the processing for model validation. There are a few ways to go about this, each
 with its own advantages and disadvantages. In this post, we’ll take a look at three different ways to store data in
-computer vision applications: a file system, an S3-like object storage and [Reduct Storage](https://reduct-storage.dev).
+computer vision applications: a file system, an S3-like object storage and [ReductStore](https://reduct.store).
 We’ll also discuss some of the pros and cons of each option.
 
 ## A Simple Computer Vision Application
@@ -73,13 +73,13 @@ Unfortunately, this solution is also not perfect.
 * **Data accessibility**. Since the data in the object storage has the same structure as a file system, there are the
   same accessibility issues. Moreover, it is even slower because we are using an HTTP layer.
 
-## Reduct Storage
+## ReductStore
 
-[Reduct Storage](https://reduct-storage.dev) is an open source time series database for keeping a history of blobs. It
+[ReductStore](https://reduct.store) is an open source time series database for keeping a history of blobs. It
 is designed to solve the problem of data reduction and availability for AI/ML applications, where we have data of
 various sizes and formats continuously coming from data sources.
 
-![Reduct Storage Usage](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oeaornitl6k459vwmoz1.png)
+![ReductStore Usage](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oeaornitl6k459vwmoz1.png)
 
 As you can see, the structure of our application is similar to when using an S3-like storage system, but it works
 differently. Instead of storing blobs individually, it preallocates blocks of fixed size and writes multiple blobs to
@@ -91,7 +91,7 @@ approach has the following advantages:
 * **Data reduction**. We can specify a quota for each bucket, so that the storage engine starts deleting old data when
   the bucket size reaches the quota.
 * **Security**. Like with object storage, we can access data with different permissions.
-* **Replication**. Reduct Storage provides a CLI client to mirror data manually.
+* **Replication**. ReductStore provides a CLI client to mirror data manually.
 
 ##Conclusions
 
@@ -107,7 +107,7 @@ advantages, such as scalability, durability, and security, which can make it a g
 applications. However, it may require additional setup and configuration, and may be more complex to use than a file
 system.
 
-Reduct Storage is a specialized time series database for blobs of data in AI/ML applications. It is designed to address
+ReductStore is a specialized time series database for blobs of data in AI/ML applications. It is designed to address
 the challenges of data reduction and availability. It is a good option if you need to store data on an edge device, and
 if you want to use advanced features such as a real-time disk quota and high performance.
 
