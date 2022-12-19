@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ReductStore Client SDK for C++ v1.2.0: New Features and Example Use"
-date: 2022-12-19
+date: 2022-12-20
 author: Alexey Timin
 categories:
 
