@@ -17,6 +17,8 @@ includes updated
 documentation after we renamed the project from "Reduct Storage" to "ReductStore", and supports [ReductStore HTTP API
 1.2.0](https://docs.reduct.store/http-api) with the endpoint `GET /api/v1/me`.
 
+<!--more-->
+
 One of the useful features of the ReductStore Client SDK is the ability to retrieve information about the authenticated
 user using the `IClient::Me method`. Here is an example of how to use this method:
 
