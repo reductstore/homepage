@@ -3,12 +3,9 @@ layout: post
 title: "3 Ways To Store Data in Computer Vision Applications"
 date: 2022-12-10
 author: Alexey Timin
-
 categories:
   - tutorials
   - computer-vision 
-image:
-  path: assets/img/blog/computer-vision-diagram.png 
 ---
 
 When it comes to computer vision, data storage is a critical component. You need to be able to store images for model

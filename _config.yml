@@ -40,9 +40,9 @@ colors: #in hex code if not noted else
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
   - title: github
-    url: https://github.com/reduct-storage
+    url: https://github.com/reductstore
   - title: twitter
-    url: https://twitter.com/ReductStorage
+    url: https://twitter.com/ReductStore
   - title: discord
     url: https://discord.gg/NQbPeGgzdR
 
