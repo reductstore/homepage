@@ -2,7 +2,7 @@
 
 # Site settings
 title: ReductStore
-description: A time series database for storing and managing large amount of blob data
+description: A time series database for storing and managing large amounts of blob data
 analytics: G-Y51RZRPE3X
 baseurl: "" #important: start with /
 url: "https://reduct.store"
@@ -107,7 +107,7 @@ members:
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
 about: |
-  ReductStore is a time series database designed specifically for storing and managing large amount of blob data. 
+  ReductStore is a time series database designed specifically for storing and managing large amounts of blob data. 
   It has high performance for writing and real-time querying, making it suitable for edge computing, computer vision, and IoT applications.
   ReductStore is 100% open source under GNU AGPL v3.
 
