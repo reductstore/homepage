@@ -1,0 +1,29 @@
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+        <a href="#python" aria-controls="python" role="tab" data-toggle="tab">Python</a>
+    </li>
+    <li role="presentation">
+        <a href="#js" aria-controls="js" role="tab" data-toggle="tab">JavaScript</a>
+    </li>
+    <li role="presentation">
+        <a href="#cpp" aria-controls="cpp" role="tab" data-toggle="tab">C++</a>
+    </li>
+    <li role="presentation">
+        <a href="#curl" aria-controls="curl" role="tab" data-toggle="tab">or CURL</a>
+    </li>
+</ul>
+
+<div class="tab-content" id="UsageTab">
+    <div role="tabpanel" class="tab-pane active" id="python">
+        {% include snippets/python.html %}
+    </div>
+    <div role="tabpanel" class="tab-pane" id="js">
+        {% include snippets/js.html %}
+    </div>
+    <div role="tabpanel" class="tab-pane" id="cpp">
+        {% include snippets/cpp.html %}
+    </div>
+    <div role="tabpanel" class="tab-pane" id="curl">
+        {% include snippets/curl.html %}
+    </div>
+</div>
