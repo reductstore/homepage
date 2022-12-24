@@ -508,3 +508,8 @@ a.anchor{
   align-items: center;
   flex-wrap: wrap;
 }
+
+.main-page-section {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

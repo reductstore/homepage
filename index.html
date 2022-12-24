@@ -5,84 +5,102 @@ permalink: /
 ---
 
 <div id="service" xmlns="http://www.w3.org/1999/html">
-    <div class="container">
-        <div class="row centered">
-            <div class="col-md-4">
-                <i class="fa fa-flask" aria-hidden="true"></i>
-                <span class="sr-only">An image of a laboratory flask</span>
-                <h4>Simple HTTP API</h4>
-                <p>You can use simple HTTP requests to write objects with timestamps and read them for a given time
-                    interval.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
-                <span class="sr-only">An image of a cog</span>
-                <h4>Optimized For Real Time Applications</h4>
-                <p>Never worry about storage overruns by using ReductStore's high performance FIFO quota.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fas fa-boxes" aria-hidden="true"></i>
-                <span class="sr-only">An image of a box</span>
-                <h4>No Object Size Limitation</h4>
-                <p>The storage engine uses streaming with asynchronous write/read operations so the only object size
-                    limitation is your disk.
-                </p>
-            </div>
-        </div>
-        <div class="row centered">
-            <p>
-                <a href="/download" class="btn-lg btn-theme" style="padding: 1em">Get Started</a>
-            </p>
-        </div>
-
-        <div style="margin-top: 4em; margin-bottom: 4em">
-            <div class="hline"></div>
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-0 text-left hidden-xs">
-                    {% include examples.html %}
-                </div>
-                <div class="col-md-6 col-md-offset-0" style="margin-top: 120px">
-                    <h3 class="text-center">ReductStore Client SDKs</h3>
-                    <div class="text-left">
-                        You can use the following client SDKs for quick and easy integration into your applications and
-                        infrastructure:
-                        <div class="text-center" style="margin-top: 20px">
-                            <a href="https://github.com/reductstore/reduct-py" style="padding: 10px">
-                                <img src="assets/img/blog/thumbs/python.png" alt="ReductStore Client SDK for Python"/>
-                            </a>
-                            <a href="https://github.com/reductstore/reduct-js" style="padding: 10px">
-                                <img src="assets/img/blog/thumbs/js.png" alt="ReductStore Client SDK for JavaScript"/>
-                            </a>
-                            <a href="https://github.com/reductstore/reduct-cpp" style="padding: 10px">
-                                <img src="assets/img/blog/thumbs/cpp.png" alt="ReductStore Client SDK for C++"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="margin-top: 4em; margin-bottom: 4em">
-            <div class="hline"></div>
-            <div class="row centered">
-                <div class="col-md-6">
-                    <h3 class="text-center" style="margin-top: 120px">WebConsole</h3>
-                    <p>
-                        ReductStore has an integrated web console that allows you to easily manage your data and access
-                        to it. You can try it out by using our <a href="https://play.reduct.store"> demo server </a>
-                        (API token "reduct").
-                    </p>
-
-                </div>
-
-                <div class="col-md-6 col-md-offset-0" style="padding: 20px">
-                    <a href="https://github.com/reductstore/web-console">
-                        <img src="assets/img/web-console.png" class="img-rounded img-responsive" alt="ReductStore Web Console"/>
-                        <!--                            <img src="assets/img/blog/thumbs/web-console.png" alt="ReductStore Web Console"/>-->
-                    </a>
-                </div>
-            </div>
-
-        </div>
+  <div class="container">
+    <div class="row centered">
+      <div class="col-md-4">
+        <i class="fa fa-flask" aria-hidden="true"></i>
+        <span class="sr-only">An image of a laboratory flask</span>
+        <h4>Simple HTTP API</h4>
+        <p>You can use simple HTTP requests to write objects with timestamps and read them for a given time
+          interval.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+        <span class="sr-only">An image of a cog</span>
+        <h4>Optimized For Real Time Applications</h4>
+        <p>Never worry about storage overruns by using ReductStore's high performance FIFO quota.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-boxes" aria-hidden="true"></i>
+        <span class="sr-only">An image of a box</span>
+        <h4>No Object Size Limitation</h4>
+        <p>The storage engine uses streaming with asynchronous write/read operations so the only object size
+          limitation is your disk.
+        </p>
+      </div>
     </div>
+    <div class="row centered" style="margin-bottom: 3em">
+      <p>
+        <a href="/download" class="btn-lg btn-theme" style="padding: 1em">Get Started</a>
+      </p>
+    </div>
+
+    <div class="hline"></div>
+    <div class="main-page-section">
+      <div class="row">
+        <div class="col-md-7 col-md-offset-0 text-left hidden-sm hidden-xs" style="padding: 20px">
+          {% include examples.html %}
+        </div>
+        <div class="col-md-5 col-md-offset-0" style="margin-top: 120px">
+          <h3 class="text-center">ReductStore Client SDKs</h3>
+          <div class="text-left">
+            You can use the following client SDKs for quick and easy integration into your applications and
+            infrastructure:
+            <div class="text-center" style="margin-top: 20px">
+              <a href="https://github.com/reductstore/reduct-py" style="padding: 10px">
+                <img src="assets/img/blog/thumbs/python.png" alt="ReductStore Client SDK for Python"/>
+              </a>
+              <a href="https://github.com/reductstore/reduct-js" style="padding: 10px">
+                <img src="assets/img/blog/thumbs/js.png" alt="ReductStore Client SDK for JavaScript"/>
+              </a>
+              <a href="https://github.com/reductstore/reduct-cpp" style="padding: 10px">
+                <img src="assets/img/blog/thumbs/cpp.png" alt="ReductStore Client SDK for C++"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hline"></div>
+    <div class="main-page-section">
+      <div class="row centered">
+        <div class="col-md-5">
+          <h3 class="text-center" style="margin-top: 120px">Web Console</h3>
+          <p>
+            ReductStore has an integrated <a href="https://github.com/reductstore/web-console">web console</a> that
+            allows you to easily manage your data and access
+            to it. You can try it out by using our <a href="https://play.reduct.store"> demo server </a>
+            (API token "reduct").
+          </p>
+
+        </div>
+
+        <div class="col-md-7 col-md-offset-0 hidden-sm hidden-xs" style="padding: 20px">
+          <a href="https://github.com/reductstore/web-console">
+            <img src="assets/img/web-console.png" class="img-rounded" alt="ReductStore Web Console"/>
+            <!--                            <img src="assets/img/blog/thumbs/web-console.png" alt="ReductStore Web Console"/>-->
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hline"></div>
+    <div class="main-page-section">
+      <div class="row">
+        <div class="col-md-7 hidden-sm hidden-xs" style="padding: 20px">
+          {% include snippets/rcl.html %}
+        </div>
+        <div class="col-md-5 text-center">
+          <h3 style="margin-top: 120px">CLI Client</h3>
+          <p>
+            You can manage your ReductStore instance and export data from it by using <a
+              href="http://github.com/reductstore/reduct-cli">ReducStore CLI client</a>.
+            The client is cross-platform, written in Python and available as a PIP package.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div><!--/container -->
 
