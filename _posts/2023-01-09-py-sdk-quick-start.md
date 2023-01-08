@@ -11,9 +11,9 @@ categories:
 
 ---
 
-
 This quick start guide will walk you through the process of installing and using the [ReductStore Python client SDK](https://github.com/reductstore/reduct-py) to
 interact with a [ReductStore](https://github.com/reductstore/reductstore) instance.
+
 ## Installing the SDK
 
 To install the ReductStore SDK, you will need to have Python 3.7 or higher installed on your machine. Once Python is
@@ -66,7 +66,7 @@ async def main():
     # The simplest case. Write some data with the current timestamp
     await bucket.write("entry-1", b"Hello, World!")
 
-    # More complex case. Upload a file in chunks with a custom timestamp unix timestamp in milliseconds
+    # More complex case. Upload a file in chunks with a custom timestamp unix timestamp in microseconds
     async def file_reader():
         """Read the current example in chunks of 50 bytes"""
         with open(CURRENT_FILE, "rb") as file:
@@ -154,24 +154,8 @@ the `timestamp`
 argument:
 
 ```python 
-# More complex case. Upload a file in chunks with a custom timestamp unix timestamp in milliseconds
-async def file_reader():
-    """Read the current example in chunks of 50 bytes"""
-    with open(CURRENT_FILE, "rb") as file:
-        while True:
-            data = file.read(50)  # Read in chunks of 50 bytes
-            if not data:
-                break
-            yield data
+# More complex case. Upload a file in chunks with a custom timestamp UNIX timestamp in microseconds
 
-
-ts = int(time_ns() / 10000)
-await bucket.write(
-    "entry-1",
-    file_reader(),
-    timestamp=ts,
-    content_length=CURRENT_FILE.stat().st_size,
-)
 ```
 
 This code snippet shows how to use the write method to upload a file in chunks to an entry in a bucket. The generator
@@ -191,7 +175,7 @@ to open the record, and then use the `read_all` method to read all of the data i
 async with bucket.read("entry-1", timestamp=ts) as record:
     print(f"Record timestamp: {record.timestamp}")
     print(f"Record size: {record.size}")
-    print(record.read_all())
+    print(await record.read_all())
 ```
 
 To iterate over all records in an entry, you can use the `query` method on a Bucket instance. Pass the name of the entry
