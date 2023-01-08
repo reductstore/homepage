@@ -31,7 +31,7 @@ If you don't already have a ReductStore instance running, you can easily spin on
 run the following command:
 
 ```
-docker run -d -p 8080:8080 reductstore/reductstore
+docker run -p 8383:8383 reductstore/reductstore
 ```
 
 This will start a ReductStore instance listening on port 8383 of your local machine.
@@ -88,7 +88,7 @@ async def main():
     async with bucket.read("entry-1", timestamp=ts) as record:
         print(f"Record timestamp: {record.timestamp}")
         print(f"Record size: {record.size}")
-        print(record.read_all())
+        print(await record.read_all())
 
     # More complex case. Iterate over all records in the entry and read them in chunks
     async for record in bucket.query("entry-1"):
