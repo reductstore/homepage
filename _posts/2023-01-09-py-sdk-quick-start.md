@@ -11,9 +11,9 @@ categories:
 
 ---
 
-This quick start guide will walk you through the process of installing and using the ReductStore Python client SDK to
-interact with a [ReductStore](https://github.com/reductstore/reductstore) instance.
 
+This quick start guide will walk you through the process of installing and using the [ReductStore Python client SDK](https://github.com/reductstore/reduct-py) to
+interact with a [ReductStore](https://github.com/reductstore/reductstore) instance.
 ## Installing the SDK
 
 To install the ReductStore SDK, you will need to have Python 3.7 or higher installed on your machine. Once Python is
