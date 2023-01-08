@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Performance comparison: ReductStore vs. Minio"
-date: 2023-01-04
+date: 2023-01-07
 author: Alexey Timin
 categories:
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Quick Start with the ReductStore Python SDK"
-date: 2023-01-09
-author: Alexey Timin
+date: 2023-01-08
+author: Alexey Timn
 canonical_url: "https://py.reduct.store/en/latest/docs/quick-start/"
 categories:
 
