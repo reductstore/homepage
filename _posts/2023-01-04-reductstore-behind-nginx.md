@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "ReductStore behind NGINX"
+description: A tutorial to run few ReductStore instances by using NGINX as a reverse proxy
 date: 2023-01-04
 author: Alexey Timin
 categories:

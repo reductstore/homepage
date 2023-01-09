@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How to integrate ReductStore into your C++ application"
+description: "A quick start guide to integrate ReductStore into your C++ application by using the ReductStore C++ SDK."
 date: 2022-12-17 00:00:46
 author: Alexey Timin
 canonical_url: "https://cpp.reduct.store/en/latest/docs/quick-start/"

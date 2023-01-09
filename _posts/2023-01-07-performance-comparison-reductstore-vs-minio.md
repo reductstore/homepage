@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Performance comparison: ReductStore vs. Minio"
+description: Benchmarking ReductStore and Minio to compare their performance for writing and reading blob data with different sizes in time series manner.
 date: 2023-01-07
 author: Alexey Timin
 categories:

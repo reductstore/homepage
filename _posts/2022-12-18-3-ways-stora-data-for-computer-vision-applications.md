@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "3 Ways To Store Data in Computer Vision Applications"
+description: "Learn how to store data in computer vision applications by using ReductStore, S3-like storage or a file system."
 date: 2022-12-10
 author: Alexey Timin
 categories:

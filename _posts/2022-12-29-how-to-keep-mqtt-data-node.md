@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How to keep a history of MQTT data with Node.js"
+description: "A tutorial to keep a history of MQTT messages with Node.js by using the ReductStore Client SDK for JavaScript."
 date: 2022-12-29
 author: Alexey Timin
 categories:

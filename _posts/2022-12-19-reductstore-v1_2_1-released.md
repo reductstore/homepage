@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "ReductStore v1.2.0 Released"
+description: ReductStore v1.2.0 is released with a new HTTP method to get permission for the current API token
 date: 2022-12-19
 author: Alexey Timin
 categories:

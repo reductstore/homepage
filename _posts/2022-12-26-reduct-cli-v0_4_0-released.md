@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CLI Client for ReductStore v0.4.0 has been released"
+description: Release notes for CLI Client for ReductStore v0.4.0 with a new feature to export data to a file system
 date: 2022-12-26
 author: Alexey Timin
 categories:
