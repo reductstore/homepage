@@ -14,19 +14,20 @@ layout: default
         {% if page.canonical_url %}
         <csmall>| Orginaly published at <a href="{{page.canonical_url}}">{{page.canonical_url | remove:'https://' |
           split:'/' | first}}</a></csmall>
+        {% endif %}
       </p>
-      {% endif %}
+
 
       {{ content }}
 
+
+      {% for category in page.categories %}
+      <a class="btn btn-theme btn-xs" href="{{ '/category/#'  | prepend: site.baseurl  }}{{ category | first }}" role="button">#{{
+        category  | capitalize }}</a>
+      {% endfor %}
+
       <div class="spacing"></div>
-      <!-- <h6>SHARE:</h6>
-      <p class="share">
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-tumblr"></i></a>
-          <a href="#"><i class="fa fa-google-plus"></i></a>
-      </p> -->
+
       {% include share_bar.html%}
     </div>
     <! --/col-lg-8 -->

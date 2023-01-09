@@ -4,8 +4,11 @@
   <ul class="popular-posts">
     {% for post in site.posts limit:4 %}
     <li>
-      <p><a class="ctitle" href="{{ post.url }}">{{ post.title }}</a></p>
-      <em>Posted on {{ post.date | date_to_string }}</em>
+      <p></pa><a class="ctitle" href="{{ post.url }}">{{ post.title }}</a></p>
+      {% for category in post.categories %}
+      <a class="btn btn-theme btn-xs" href="{{ '/category/#'  | prepend: site.baseurl  }}{{ category }}" role="button">#{{
+        category  | capitalize }}</a>
+      {% endfor %}
     </li>
     {% endfor %}
   </ul>
