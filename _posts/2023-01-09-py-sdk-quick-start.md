@@ -156,7 +156,22 @@ argument:
 
 ```python 
 # More complex case. Upload a file in chunks with a custom timestamp UNIX timestamp in microseconds
+async def file_reader():
+    """Read the current example in chunks of 50 bytes"""
+    with open(CURRENT_FILE, "rb") as file:
+        while True:
+            data = file.read(50)  # Read in chunks of 50 bytes
+            if not data:
+                break
+            yield data
 
+ts = int(time_ns() / 10000)
+await bucket.write(
+    "entry-1",
+    file_reader(),
+    timestamp=ts,
+    content_length=CURRENT_FILE.stat().st_size,
+)
 ```
 
 This code snippet shows how to use the write method to upload a file in chunks to an entry in a bucket. The generator
