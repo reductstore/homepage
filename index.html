@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-<div id="service" xmlns="http://www.w3.org/1999/html">
+<div id="features" xmlns="http://www.w3.org/1999/html">
     <div class="container">
         <div class="row centered">
             <div class="col-md-4">
@@ -30,6 +30,7 @@ permalink: /
             </div>
         </div>
         <div class="row centered" style="margin-bottom: 3em">
+            <p/>
             <div class="btn-group" role="group" aria-label="Download">
                 <a href="/download" class="btn-lg btn-theme" style="padding: 1em">Download</a>
                 <a href="/pricing" class="btn-lg btn-danger" style="padding: 1em">Pricing</a>
@@ -38,35 +39,38 @@ permalink: /
 
         <div class="hline"></div>
         <div class="main-page-section">
-            <div class="row">
+            <div class="row vertical">
                 <div class="col-md-7 col-md-offset-0 text-left hidden-sm hidden-xs" style="padding: 20px">
                     {% include examples.html %}
                 </div>
-                <div class="col-md-5 col-md-offset-0" style="margin-top: 120px">
-                    <h3 class="text-center">ReductStore Client SDKs</h3>
-                    <div class="text-left">
-                        You can use the following client SDKs for quick and easy integration into your applications and
-                        infrastructure:
-                        <div class="text-center" style="margin-top: 20px">
-                            <a href="https://github.com/reductstore/reduct-py" style="padding: 10px">
-                                <img src="assets/img/blog/thumbs/python.png" alt="ReductStore Client SDK for Python"/>
-                            </a>
-                            <a href="https://github.com/reductstore/reduct-js" style="padding: 10px">
-                                <img src="assets/img/blog/thumbs/js.png" alt="ReductStore Client SDK for JavaScript"/>
-                            </a>
-                            <a href="https://github.com/reductstore/reduct-cpp" style="padding: 10px">
-                                <img src="assets/img/blog/thumbs/cpp.png" alt="ReductStore Client SDK for C++"/>
-                            </a>
+                <div class="col-md-5 col-md-offset-0">
+                    <div class="text-center">
+                        <h3>ReductStore Client SDKs</h3>
+                        <div>
+                            You can use the following client SDKs for quick and easy integration into your applications and
+                            infrastructure:
+                            <div class="text-center" style="margin-top: 20px">
+                                <a href="https://github.com/reductstore/reduct-py" style="padding: 10px">
+                                    <img src="assets/img/blog/thumbs/python.png" alt="ReductStore Client SDK for Python"/>
+                                </a>
+                                <a href="https://github.com/reductstore/reduct-js" style="padding: 10px">
+                                    <img src="assets/img/blog/thumbs/js.png" alt="ReductStore Client SDK for JavaScript"/>
+                                </a>
+                                <a href="https://github.com/reductstore/reduct-cpp" style="padding: 10px">
+                                    <img src="assets/img/blog/thumbs/cpp.png" alt="ReductStore Client SDK for C++"/>
+                                </a>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
         <div class="hline"></div>
         <div class="main-page-section">
-            <div class="row centered">
+            <div class="row centered vertical">
                 <div class="col-md-5">
-                    <h3 class="text-center" style="margin-top: 120px">Web Console</h3>
+                    <h3>Web Console</h3>
                     <p>
                         ReductStore has an integrated <a href="https://github.com/reductstore/web-console">web
                         console</a> that
@@ -89,12 +93,12 @@ permalink: /
 
         <div class="hline"></div>
         <div class="main-page-section">
-            <div class="row">
+            <div class="row vertical centered">
                 <div class="col-md-7 hidden-sm hidden-xs" style="padding: 20px">
                     {% include snippets/rcl.html %}
                 </div>
-                <div class="col-md-5 text-center">
-                    <h3 style="margin-top: 120px">CLI Client</h3>
+                <div class="col-md-5">
+                    <h3>CLI Client</h3>
                     <p>
                         You can manage your ReductStore instance and export data from it by using <a
                             href="http://github.com/reductstore/reduct-cli">ReducStore CLI client</a>.
