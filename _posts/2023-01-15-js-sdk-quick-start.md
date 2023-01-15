@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quick Start with the ReductStore JavScript SDK"
+title: "Quick Start with the ReductStore JavaScript SDK"
 description: A tutorial to get started with the ReductStore JavaScript SDK
 date: 2023-01-08
 author: Alexey Timn
