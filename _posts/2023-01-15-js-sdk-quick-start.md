@@ -2,7 +2,7 @@
 layout: post
 title: "Quick Start with the ReductStore JavaScript SDK"
 description: A tutorial to get started with the ReductStore JavaScript SDK
-date: 2023-01-08
+date: 2023-01-15
 author: Alexey Timn
 canonical_url: "https://js.reduct.store/en/latest/docs/quick-start/"
 categories:
