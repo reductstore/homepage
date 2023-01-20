@@ -2,7 +2,7 @@
 layout: post
 title: "CLI Client for ReductStore v0.5.0 has been released"
 description: Release notes for CLI Client for ReductStore v0.5.0 with new features to improve data export and mirroring
-date: 2023-01-21
+date: 2023-01-20
 author: Alexey Timin
 categories:
 
