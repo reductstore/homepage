@@ -119,21 +119,21 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: {{ site.colors.primary }};
+	color: {{site.colors.primary }};
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: {{ site.colors.primary }};
+	color: {{site.colors.primary }};
 	background-color: transparent;
 }
 
 .navbar-default {
-	background-color: {{ site.colors.secondary }};
+	background-color: {{site.colors.secondary }};
 	border-color: transparent;
 }
 
 .dropdown-menu {
-	background: {{ site.colors.secondary }};
+	background: {{site.colors.secondary }};
 }
 
 .dropdown-menu > li > a {
