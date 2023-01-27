@@ -353,7 +353,15 @@ a:focus {
 }
 
 #footerwrap i:hover {
-	color: {{ site.colors.primary }}
+	color: {{site.colors.link_hover }};
+}
+
+#footerwrap a {
+	color: {{ site.colors.footer_content }};
+}
+
+#footerwrap a:hover {
+	color: {{site.colors.link_hover }};
 }
 
 /*	################################################################
