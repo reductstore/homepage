@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducing the New Release of ReductStore Python SDK: v1.3.0 - Labels Support and More"
+title: "Introducing the New Release of ReductStore Python SDK: v1.3.0: Labels Support and More"
 description: "Introducing v1.3.0 of the ReductStore Client SDK for Python: Enhancements to Labels and Content-Type"
 date: 2023-01-26
 author: Alexey Timin
