@@ -50,7 +50,7 @@ To update to the latest version of the Reduct CLI, use the following command:
 pip install -U reduct-cli
 ```
 
-if you have any questions or feedback, don't hesitate to reach out in [Discord](https://discord.gg/NQbPeGgzdR)
+if you have any questions or feedback, don't hesitate to reach out in [Discord](https://discord.gg/8wPtPGJYsn)
 or by opening a discussion on [GitHub](https://github.com/reductstore/reductstore/discussions).
 
 Thanks for using ReductStore!

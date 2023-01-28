@@ -31,7 +31,7 @@ pip install -U reduct-cli
 In addition to the new rcli export folder command, we've also made some improvements to the documentation and updated it
 after rebranding.
 
-if you have any questions or feedback, don't hesitate to reach out in [Discord](https://discord.gg/NQbPeGgzdR)
+if you have any questions or feedback, don't hesitate to reach out in [Discord](https://discord.gg/8wPtPGJYsn)
 or by opening a discussion on [GitHub](https://github.com/reductstore/reductstore/discussions).
 
 Thanks for using ReductStore!

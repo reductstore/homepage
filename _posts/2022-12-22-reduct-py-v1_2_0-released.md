@@ -54,5 +54,5 @@ To upgrade to the latest version of the reduct-py SDK, run the following command
 pip install -U reduct-py
 ```
 
-if you have any questions or feedback, don't hesitate to reach out in [Discord](https://discord.gg/NQbPeGgzdR)
+if you have any questions or feedback, don't hesitate to reach out in [Discord](https://discord.gg/8wPtPGJYsn)
 or by opening a discussion on [GitHub](https://github.com/reductstore/reductstore/discussions).
