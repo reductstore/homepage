@@ -12,7 +12,7 @@ categories:
 
 ---
 
-We are excited to announce the release of [version 1.3.0](https://github.com/reductstore/reduct-py/releases/tag/v1.3.0)
+We are happy to announce the release of [version 1.3.0](https://github.com/reductstore/reduct-py/releases/tag/v1.3.0)
 of the ReductStore SDK for Python! This release introduces several new features to help users better organize and filter
 their data.
 
@@ -102,4 +102,4 @@ We hope you enjoy the new features and improvements in this release, and as alwa
 suggestions for future updates. Don't hesitate to reach out in [Discord](https://discord.gg/8wPtPGJYsn)
 or by opening a discussion on [GitHub](https://github.com/reductstore/reductstore/discussions).
 
-Thanks for using ReductStore!
+Thanks for using [ReductStore](https://www.reduct.store)!
