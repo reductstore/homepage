@@ -52,8 +52,7 @@
         createCookie(name, "", -1);
     }
 
-    if (readCookie('cookie-notice-dismissed') == 'true') {
-        // gTag Script Var Start
+    function initGA() {
         var script = document.createElement("script");
         script.src = "https://www.googletagmanager.com/gtag/js?id={{ site.analytics }}";
         document.body.appendChild(script);
@@ -65,14 +64,16 @@
 
         gtag('js', new Date());
         gtag('config', '{{ site.analytics }}');
-
+    }
+    if (readCookie('cookie-notice-dismissed') == 'true') {
+        initGA();
     } else {
         document.getElementById('cookie-notice').style.display = 'block';
     }
     document.getElementById('cookie-notice-accept').addEventListener("click", function () {
         createCookie('cookie-notice-dismissed', 'true', 31);
         document.getElementById('cookie-notice').style.display = 'none';
-        location.reload();
+        initGA();
     });
 
 </script>
