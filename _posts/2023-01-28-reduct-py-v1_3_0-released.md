@@ -95,7 +95,7 @@ need. We encourage you to upgrade to this latest version of the SDK and start ta
 capabilities:
 
 ```
-pip install reduct==1.3.0
+pip install reduct-py==1.3.0
 ```
 
 We hope you enjoy the new features and improvements in this release, and as always, we welcome your feedback and
