@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New Release of ReductStore JavaScript SDK v1.3.0q"
+title: "New Release of ReductStore JavaScript SDK v1.3.0"
 description: "Introducing v1.3.0 of the ReductStore Client SDK for JavaScript: Enhancements to Labels and Content-Type"
 date: 2023-02-10
 author: Alexey Timin
