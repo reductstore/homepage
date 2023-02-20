@@ -6,7 +6,7 @@ using reduct::IBucket;
 using reduct::IClient;
 
 int main() {
-  auto client = IClient::Build("https://play.reduct.store");
+  auto client = IClient::Build("http://127.0.0.1:8383");
   auto [bucket, create_err] = client->GetOrCreateBucket("bucket");
 
   IBucket::Time ts = IBucket::Time::clock::now();
