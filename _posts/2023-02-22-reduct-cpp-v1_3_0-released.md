@@ -27,11 +27,12 @@ auto [bucket, err] =  client->CreateBucket(kBucketName);
 IBucket::Time ts = IBucket::Time() + std::chrono::microseconds(123109210);
 std::string blob = "some blob of data";
 bucket->Write("entry",
-                    IBucket::WriteOptions{
-                        .timestamp = ts,
-                        .labels = IBucket::LableMap({"label1", "value3"}),
-                    },
-                    [&blob](auto rec) { rec->WriteAll(blob); });
+    IBucket::WriteOptions{
+        .timestamp = ts,
+        .labels = IBucket::LableMap({"label1", "value3"}),
+    },
+    [&blob](auto rec) { rec->WriteAll(blob); 
+});
 
 ```
 
@@ -39,15 +40,11 @@ This labels can be used to filter the results of a query:
 
 ```cpp
 auto err = bucket->Query("entry", ts, ts + us(3), 
-                         IBucket::QueryOptions{.include = IBucket::LabelMap({"label1", "value1"})},
-                         [&all_data](auto record) {
-                           auto read_err = record.Read([&all_data](auto data) {
-                             all_data.append(data);
-                             return true;
-                           });
-
-                           return true;
-                         });
+    IBucket::QueryOptions{.include = IBucket::LabelMap({"label1", "value1"})},
+    [&all_data](auto record) {
+        std::cout << record->ReadAll() << std::endl;
+    }
+);
 
 ```
 
@@ -58,10 +55,12 @@ when you are writing a file to the database and want to store the file extension
 the image format.
 
 ```cpp
-bucket->Write("entry", IBucket::WriteOptions{
-                        .content_type = "image/png",
-                    },
-                    [&blob](auto rec) { rec->WriteAll(image_as_blob); });
+bucket->Write("entry", I
+    Bucket::WriteOptions{
+        .content_type = "image/png",
+    },
+    [&blob](auto rec) { rec->WriteAll(image_as_blob); }
+ );
 ```
 
 Read more about labels and content type in the [ReductStore documentation](https://docs.reduct.store/). 
