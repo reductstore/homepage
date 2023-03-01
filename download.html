@@ -32,6 +32,10 @@ permalink: /download
     RS_DATA_PATH=./data ./reductstore</code></pre>
         <h4>Docker</h4>
         <pre><code>    docker run -p 8383:8383 -v ${PWD}/data:/data reductstore/reductstore:latest</code></pre>
+        <h4>Snap</h4>
+        <pre><code>    sudo snap install reductstore
+    RS_DATA_PATH=./data ./reductstore</code></pre>
+
         {% include download_sdks.html %}
         {% include download_cli.html %}
     </div>
