@@ -4,7 +4,7 @@ title: "How to Use 'Cats' dataset with Python ReductStore SDK"
 description: A tutorial on how to download and use the "Cats" dataset with Python ReductStore SDK
 canonical_url: "https://github.com/reductstore/datasets/blob/main/examples/cats.ipynb"
 
-date: 2023-03-08
+date: 2023-03-07
 author: Alexey Timin
 categories:
 - tutorials
