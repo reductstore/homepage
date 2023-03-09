@@ -1,0 +1,35 @@
+---
+layout: post
+title: CLI Client for ReductStore v0.8.0 has been released
+description: Release notes for CLI Client for ReductStore v0.8.0 with improved rcli export command.
+date: 2023-03-09
+author: Alexey Timin
+categories:
+
+- news
+- cli
+
+---
+
+
+Hey, I've released [version 0.8.0](https://github.com/reductstore/reduct-cli/releases/tag/v0.8.0) of Reduct CLI, the
+Python package for managing data stored in [ReductStore](https://www.reduct.store/). This release includes two new
+features that will be particularly helpful for [our public datasets hosted]() on ReductStore, where metadata can be used
+to provide important context for the data.
+
+1. The `rcli export folder` command now has a new option `--with-metadata`, which exports meta information about a
+   record and its labels into a JSON file along with the content of the record.
+
+2. The `rcli export` commands now accept integers for `--start` and `--stop` options, which means you can specify a time
+   interval in Unix time or use it as a range of record IDs if you don't care about time:
+
+   ```
+    # Export records with ID from 0 to 5 
+    rcli export folder instance/bucket ./export_path --start 0 --stop 5
+   ```
+
+
+I hope these new features make it even easier to work with ReductStore and manage your data. As always, if you have any
+questions or feedback, please don't hesitate to reach out! 
+
+Thanks for using [ReductStore](https://www.reduct.store)!
