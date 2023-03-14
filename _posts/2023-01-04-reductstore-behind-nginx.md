@@ -43,14 +43,14 @@ First, we have to prepare our `docker-compose.yml` file:
 version: "3"
 services:
   storage-1:
-    image: reductstore/reductstore:latest
+    image: reduct/store:latest
     environment:
       RS_API_BASE_PATH: "storage-1/"  # API available on http://storage-1/storage-1
     volumes:
       - ./storage-1:/data             # separated volume for data
 
   storage-2:
-    image: reductstore/reductstore:latest
+    image: reduct/store:latest
     environment:
       RS_API_BASE_PATH: "storage-2/"
     volumes:

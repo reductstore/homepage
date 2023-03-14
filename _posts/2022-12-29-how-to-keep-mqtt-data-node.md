@@ -42,7 +42,7 @@ file in the example's folder with the services:
 version: "3"
 services:
   reduct-storage:
-    image: reductstore/reductstore:latest
+    image: reduct/store:latest
     volumes:
       - ./data:/data
     ports:
