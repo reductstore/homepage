@@ -9,7 +9,7 @@ categories:
 ---
 
 
-Initially, I chose to use C++ for the early editions of ReductStore because of my experience with the language. This
+Initially, I chose to use C++ for the early editions of [ReductStore](https://www.reduct.store) because of my experience with the language. This
 allowed me to quickly create a functional time series database for binary data. However, as our platform expanded to
 include Windows and MacOS, I found myself struggling to manage the C++ infrastructure as the codebase grew. This made it
 difficult for me to focus on enhancing the product's functionality and unique features, as I had to ensure compatibility
