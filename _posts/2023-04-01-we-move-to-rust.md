@@ -29,7 +29,7 @@ reducing the risk of runtime errors.
 ## Migration plan
 
 Rather than rewrite the entire code base at once, we decided to take a module-by-module approach to our migration
-process. Our strategy is to combine C++ and Rust using the efficient cxx.rs library. We will perform rigorous testing at
+process. Our strategy is to combine C++ and Rust using the efficient [cxx.rs](https://cxx.rs/) library. We will perform rigorous testing at
 every step of the way to ensure a seamless transition. At this time, building for Windows and MacOS has been disabled,
 as it is not practical to invest time in outdated infrastructure. Once the migration is complete, we plan to cross
 compile with Rust for enhanced functionality. 
