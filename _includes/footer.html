@@ -5,16 +5,42 @@
                 <h4>About</h4>
                 <div class="hline-w"></div>
                 <p>{{ site.about }}</p>
+
             </div>
-            <div class="col-lg-1">
+            <div class="col-lg-2">
                 <h4>Links</h4>
                 <div class="hline-w"></div>
-                <div class="btn-group-vertical btn-group-lg" style="text-align: left">
-                    <a class="btn-social btn-outline" href="{{ site.baseurl }}/pricing">Pricing</a><br/>
-                    <a class="btn-social btn-outline" href="{{ site.baseurl }}/blog/">Blog</a><br/>
-                    <a class="btn-social btn-outline" href="https://docs.reduct.store">Docs</a><br/>
-                    <a class="btn-social btn-outline" href="{{ site.baseurl }}/faq">FAQ</a><br/>
+                <p>
+                <div class="row">
+                    <div class="col-lg-4">
+
+                        <div class="btn-group-vertical btn-group-lg" style="text-align: left">
+                            <a class="btn-social btn-outline" href="{{ site.baseurl }}/pricing">Pricing</a><br/>
+                            <a class="btn-social btn-outline" href="{{ site.baseurl }}/blog/">Blog</a><br/>
+                            <a class="btn-social btn-outline" href="https://docs.reduct.store">Docs</a><br/>
+                            <a class="btn-social btn-outline" href="{{ site.baseurl }}/faq">FAQ</a><br/>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+
+                        <div class="btn-group-vertical btn-group-lg" style="text-align: left">
+                            <a class="btn-social btn-outline" href="{{ site.baseurl }}/privacy_policy">Privacy
+                                Policy</a><br/>
+                        </div>
+                    </div>
                 </div>
+                </p>
+            </div>
+            <div class="col-lg-2">
+                <h4>Imprint</h4>
+                <div class="hline-w"></div>
+                <p>
+                    ReductStore LLC<br/>
+                    {{ site.address[0] }}
+                    <br/>
+                    {{ site.address[1] }}
+                    <br/>
+                    <a href="mailto:info@reduct.store">info@reduct.store</a></p>
             </div>
             <div class="col-lg-3">
                 <h4>Social</h4>
@@ -31,18 +57,6 @@
                         <span class="sr-only">GitHub Discussions</span>
                     </a>
                 </p>
-            </div>
-
-            <div class="col-lg-3">
-                <h4>Imprint</h4>
-                <div class="hline-w"></div>
-                <p>
-                    ReductStore LLC<br/>
-                    {{ site.address[0] }}
-                    <br/>
-                    {{ site.address[1] }}
-                    <br/>
-                    <a href="mailto:info@reduct.store">info@reduct.store</a></p>
             </div>
         </div>
         <! --/row -->
