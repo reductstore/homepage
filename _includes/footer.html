@@ -1,11 +1,10 @@
 <div id="footerwrap">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-5">
                 <h4>About</h4>
                 <div class="hline-w"></div>
                 <p>{{ site.about }}</p>
-
             </div>
             <div class="col-lg-1">
                 <h4>Links</h4>
@@ -34,6 +33,17 @@
                 </p>
             </div>
 
+            <div class="col-lg-3">
+                <h4>Imprint</h4>
+                <div class="hline-w"></div>
+                <p>
+                    ReductStore LLC<br/>
+                    {{ site.address[0] }}
+                    <br/>
+                    {{ site.address[1] }}
+                    <br/>
+                    <a href="mailto:info@reduct.store">info@reduct.store</a></p>
+            </div>
         </div>
         <! --/row -->
     </div>
