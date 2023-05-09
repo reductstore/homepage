@@ -9,7 +9,7 @@ categories:
 ---
 
 I previously wrote about [my plan to rewrite ReductStore](https://www.reduct.store/news/we-move-to-rust/) in Rust. I am
-happy to announce that the migration is now complete. It was a very interesting experience, and I would like to share it
+happy to announce that the migration is now [complete](https://github.com/reductstore/reductstore). It was a very interesting experience, and I would like to share it
 here.
 
 ## Project Design before Migration
