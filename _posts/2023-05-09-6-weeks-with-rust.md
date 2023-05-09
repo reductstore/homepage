@@ -1,11 +1,11 @@
 ---
 layout: post
 title: 6 weeks with Rust
-description:  a post about my experience with migrating ReductStore from C++ to Rust
+description: a post about my experience with migrating ReductStore from C++ to Rust
 date: 2023-05-09
 author: Alexey Timin
 categories:
-- news
+  - news
 ---
 
 I previously wrote about [my plan to rewrite ReductStore](https://www.reduct.store/news/we-move-to-rust/) in Rust. I am
