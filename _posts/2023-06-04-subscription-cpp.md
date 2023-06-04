@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Subscribing new record with Reduct C++ SDK
+title: Subscribing new records with Reduct C++ SDK
 description: The example code demonstrates how to use the C++ Reduct SDK to subscribe to new records from a bucket.
 date: 2023-06-04
 author: Alexey Timin
