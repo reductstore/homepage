@@ -9,8 +9,6 @@ categories:
   - sdks 
 ---
 
-The example code demonstrates how to use the C++ Reduct SDK to subscribe to new records from a bucket. The program writes 10 records to a bucket, reads records with the label "good" set to "true" or "false", a# Subscribing new record with Reduct C++ SDK
-
 This article provides an introduction to [ReductStore](https://www.reduct.store/) and explains how to use the [Reduct C++ SDK](https://github.com/reductstore/reduct-cpp) to subscribe to data from the database.
 
 ## Prerequisites
