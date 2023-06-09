@@ -9,7 +9,7 @@ categories:
 - news
 ---
 
-I am happy to announce that we have completed the migration from C++ to Rust, and have released a stable version (v1.4.0) that is entirely written in Rust. 🤩
+I am happy to announce that we have completed the migration from C++ to Rust, and have released a stable version ([v1.4.0](https://github.com/reductstore/reductstore/releases/tag/v1.4.0)) that is entirely written in Rust. 🤩
 
 It was not an easy journey. After six weeks of coding, we encountered numerous regressions and changes in behavior. I needed to release two alpha and two beta versions with production testing to clean up the database. Now, it is finally ready!
 
