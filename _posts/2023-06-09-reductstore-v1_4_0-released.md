@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ReductStore v1.4.0 in Rust released"
+title: "ReductStore v1.4.0 in Rust has been released"
 description: Announcing ReductStore v1.4.0! Written entirely in Rust, this version comes with breaking API changes, continuous query additions, and updated client SDKs. Stay tuned for more features in the next release.
 date: 2023-06-09
 author: Alexey Timin
