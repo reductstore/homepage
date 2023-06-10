@@ -29,6 +29,7 @@ permalink: /download
 
         <pre><code>    wget https://github.com/reductstore/reductstore/releases/download/{{ site.projects.reductstore.version }}/reductstore.linux-amd64.tar.gz
     tar xfv reductstore.linux-amd64.tar.gz
+    chmod +x reductstore
     RS_DATA_PATH=./data ./reductstore</code></pre>
         <h4>Docker</h4>
         <pre><code>    docker run -p 8383:8383 -v ${PWD}/data:/data reduct/store:latest</code></pre>
@@ -45,6 +46,7 @@ permalink: /download
         <h4>Binary</h4>
         <pre><code>    wget https://github.com/reductstore/reductstore/releases/download/{{ site.projects.reductstore.version }}/reductstore.macos-amd64.tar.gz
     tar xfv reductstore.macos-amd64.tar.gz
+    chmod +x reductstore
     RS_DATA_PATH=./data ./reductstore</code></pre>
         {% include download_sdks.html %}
         {% include download_cli.html %}
