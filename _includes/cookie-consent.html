@@ -16,20 +16,18 @@
         cursor: pointer;
         margin-left: 0.5rem;
     }
-
 </style>
-<div  class="container" id="cookie-notice">
+<div class="container" id="cookie-notice">
     <h3>Cookie consent</h3>
-    We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our content and whether users find what they're searching for. With your consent, you're helping us to make our resource better.
-    <p/>
-    <a
-        id="cookie-notice-accept" class="btn btn-success btn-lg">Accept
+    We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our
+    content and whether users find what they're searching for. With your consent, you're helping us to make our resource
+    better.
+    <p />
+    <a id="cookie-notice-accept" class="btn btn-success btn-lg">Accept
     </a>
-    <a
-        id="cookie-notice-reject" class="btn btn-default btn-lg">Reject
+    <a id="cookie-notice-reject" class="btn btn-default btn-lg">Reject
     </a>
-    <a
-            href="/privacy_policy" class="btn btn-lg">Privacy Policy
+    <a href="/privacy_policy" class="btn btn-lg">Privacy Policy
     </a>
 </div>
 <script>
@@ -71,15 +69,19 @@
         gtag('js', new Date());
         gtag('config', '{{ site.analytics }}');
     }
+    // Show or hide the cookie notice banner depending on the cookie
+    // Initialize Google Analytics if the cookie is accepted
     if (readCookie('cookie-notice-dismissed') == 'accepted') {
+        document.getElementById('cookie-notice').style.display = 'none';
         initGA();
     }
-    if (readCookie('cookie-notice-dismissed') == 'rejected') {
+    else if (readCookie('cookie-notice-dismissed') == 'rejected') {
         document.getElementById('cookie-notice').style.display = 'none';
     }
     else {
         document.getElementById('cookie-notice').style.display = 'block';
     }
+    // Add event listeners to the buttons
     document.getElementById('cookie-notice-accept').addEventListener("click", function () {
         createCookie('cookie-notice-dismissed', 'accepted', 31);
         document.getElementById('cookie-notice').style.display = 'none';
