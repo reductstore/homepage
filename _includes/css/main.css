@@ -562,7 +562,7 @@ a.anchor{
 	margin-right: 0.5em;
 }
 
-.btn {
+.btn-pricing {
 	display: inline-block;
 	font-size: 1em;
 	padding: 0.5em 1em;
@@ -575,11 +575,11 @@ a.anchor{
 	border-radius: 25px; 
 }
 
-.btn:hover {
+.btn-pricing:hover {
 	color: white;
 }
 
-.btn.community {
+.btn-pricing.community {
 	background-color: white;
 	color: #2b0548;
 	border: 2px solid #2b0548;
