@@ -504,3 +504,83 @@ a.anchor{
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+/* Pricing page */
+.pricing-table {
+	display: flex;
+	justify-content: space-around;
+	background-color: transparent;
+	width: 90%;
+	margin: auto;
+	gap: 2em; 
+}
+
+.plan {
+	border: 1px solid #ccc;
+	padding: 1em;
+	flex: 1;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	border-radius: 25px;
+}
+
+.plan.enterprise {
+	border: 2px solid #2b0548;
+}
+
+.plan-title {
+	color: #2b0548;
+}
+
+.price {
+	font-size: 2em;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 0.5em;
+	width: 100%; 
+}
+
+.plan-description {
+	color: #666;
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+.features {
+	list-style-type: none;
+	padding: 0;
+	text-align: left;
+	width: 100%; 
+	margin-bottom: 1em;
+}
+
+.features li::before {
+	content: '✔️';
+	margin-right: 0.5em;
+}
+
+.btn-pricing {
+	display: inline-block;
+	font-size: 1em;
+	padding: 0.5em 1em;
+	background-color: #2b0548;
+	color: white;
+	text-decoration: none;
+	margin-top: auto;
+	width: 100%;
+	text-align: center;
+	border-radius: 25px; 
+}
+
+.btn-pricing:hover {
+	color: white;
+}
+
+.btn-pricing.community {
+	background-color: white;
+	color: #2b0548;
+	border: 2px solid #2b0548;
+}
