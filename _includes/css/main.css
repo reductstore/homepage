@@ -430,25 +430,72 @@ csmall {
 }
 
 /* Contact Page */
-#contactwrap {
-	background: url(../img/contact.jpg) no-repeat center top;
-	margin-top: -60px;
-	padding-top:0px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 400px;
+.container.mtb {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hline {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  height: 45px;
+  border-radius: 5px;
+	border: 3px solid #ddd;
+	box-shadow: none;
+
+}
+
+.form-control:hover {
+  border-color: #2b0548;
+}
+
+.form-control:focus {
+  border-color: #2b0548;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-check {
+  margin-bottom: 20px;
+}
+
+.form-check-label {
+  margin-left: 10px;
+}
+
+.col-lg-8 {
+  margin-bottom: 50px;
+}
+
+.text-danger {
+  color: #2b0548;
+}
+
+.btn.contact {
+	display: inline-block;
+	font-size: 1em;
+	padding: 0.5em 1em;
+	background-color: #2b0548;
+	color: white;
+	text-decoration: none;
+	margin-top: auto;
 	width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	text-align: center;
+	border-radius: 25px; 
 }
 
 /* Blog Page */
