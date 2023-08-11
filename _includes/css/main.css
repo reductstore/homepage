@@ -631,3 +631,20 @@ a.anchor{
 	color: #2b0548;
 	border: 2px solid #2b0548;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  
+  .pricing-table {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .plan {
+    width: 100%; 
+    margin-bottom: 1em; 
+  }
+
+  .btn-pricing {
+    padding: 1em 1.5em; 
+}
