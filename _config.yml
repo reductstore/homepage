@@ -2,7 +2,7 @@
 
 # Site settings
 title: ReductStore
-description: A time series database for storing and managing large amounts of blob data
+description: Time series precision supercharges blob data at unmatched speed and vast scale – setting the benchmark for edge computing, computer vision, and IoT.
 analytics: G-Y51RZRPE3X
 baseurl: "" #important: start with /
 url: "https://www.reduct.store"
