@@ -1,43 +1,79 @@
 ---
 layout: page
-title: ReductStore LLC Subscription Agreement.
+title: ReductStore LLC Subscription Agreement
 
 description:
 permalink: /terms_and_conditions/
 ---
 
-This ReductStore Subscription Agreement (this "Agreement") contains the terms and conditions that govern your access to
-and use of the Service Offerings (as defined below) and is an agreement between ReductStore, LLC ("ReductStore") and you
-or the entity you represent. This Agreement takes effect when you click the"Subscribe" button of any subscription plans
-on the pricing page, if earlier, when you use any of the Service Offerings or agree to an Order Form (the "Effective
-Date") that incorporates this Agreement. You represent to us that you are lawfully able to enter into contracts. If you
-are entering into this Agreement for an entity, such as the company you work for, you represent to us that you have
-legal authority to bind that entity.
+<span style="opacity: 0.6;">Last Updated: August 12th, 2023</span>
 
-This Agreement addresses unique commercial considerations that apply to our Service Offerings including our Products,
-open source software, and our subscription business model.
+This ReductStore Subscription Agreement (this "Agreement") contains the terms and conditions that govern your access to 
+and use of the Service Offerings (as defined below) and is an agreement between ReductStore, LLC ("ReductStore") and you 
+or the entity you represent. This Agreement takes effect when you agree to an Order Form that incorporates this Agreement, 
+or, if earlier, when you use any of the Service Offerings (the "Effective Date"). You represent to us that you are lawfully 
+able to enter into contracts. If you are entering into this Agreement for an entity, such as the company you work for, 
+you represent to us that you have legal authority to bind that entity.
+
+By agreeing to these terms, you acknowledge the commercial considerations of our Service Offerings, encompassing our Products, 
+software, and our subscription business model.
+
+Parts of our Service Offerings may utilize software components licensed under the Business Source License 1.1.
+You can review the terms of the BUSL-1.1 on ReductStore's GitHub Repository at [https://github.com/reductstore](https://github.com/reductstore).
+
 PLEASE READ THIS AGREEMENT CAREFULLY BEFORE PURCHASING AND/OR USING SOFTWARE OR SERVICE OFFERINGS FROM ReductStore.
 
+---
+
+## Table of Contents
+
+**Terms and Conditions**
+1. [Definitions](#1-definitions)
+2. [Order and Structure](#2-order-and-structure)
+3. [Use of The Service Offerings](#3-use-of-the-service-offerings)
+4. [Intellectual Property Rights](#4-intellectual-property-rights)
+5. [Data Protection](#5-data-protection)
+6. [Payments and Fees](#6-payments-and-fees)
+7. [Confidentiality](#7-confidentiality)
+8. [Term and Termination](#8-term-and-termination)
+9. [Indemnification](#9-indemnification)
+10. [Representations and Warranties](#10-representations-and-warranties)
+11. [Limitation of liability](#11-limitation-of-liability)
+12. [GENERAL](#12-general)
+
+**Support Services Addendum**
+1. [Definitions](#addendum-1-definitions)
+2. [Support Services](#addendum-2-support-services)
+3. [Optional Maintenance and Support Services](#addendum-3-optional-maintenance-and-support-services)
+4. [Obligations of Customer](#addendum-4-obligations-of-customer)
+5. [Limitation On Maintenance And Support](#addendum-5-limitation-on-maintenance-and-support)
+
+---
+
+# Terms and Conditions
 ## 1. Definitions
 
 The following terms have the following meanings:
 
-*Affiliate** means in respect of a party, any entity that from time to time, directly or indirectly, Controls, is
+**Affiliate** means in respect of a party, any entity that from time to time, directly or indirectly, Controls, is
 Controlled by, or is under common Control with that party and any other entity agreed in writing by the parties as
 being an Affiliate in respect of either party;
 
 **Auto Renew** or **Auto Renewal** is the process by which the Services Period of certain Services under this Agreement
 or an order is automatically extended for an additional Services Period unless such Services are otherwise terminated
 in accordance with the terms of the order or this Agreement.
-"Confidential Information" means information a party designates as confidential or reasonably considers as
+
+**Confidential Information** means information a party designates as confidential or reasonably considers as
 confidential, and includes pricing information on an Order Form. In addition, any software provided under this
 Agreement that is not made generally available to the public without an obligation of confidentiality shall be
 considered the Confidential Information of ReductStore. "Confidential Information" excludes information that is (a)
 or becomes publicly available through no fault of the recipient, (b) received from a third party without a duty of
-confidentiality, (c) independently developed by the receiving party without breaching this Agreement, or (d)
-rightfully known or lawfully in the possession of the receiving party prior to disclosure from the other party, or (
+confidentiality, (c) independently developed by the receiving party without breaching this Agreement, (d)
+rightfully known or lawfully in the possession of the receiving party prior to disclosure from the other party, (
 e) the information is licensed under an Open Source License (as defined by the Open Source
-Initiative (https://opensource.org/)).
+Initiative (https://opensource.org/)), or (f) the information, including software, that is originally provided under a 
+Business Source License  but transitions to an Open Source License at the end of the specified term or 
+under conditions defined in the Business Source License.
 
 **Content** means software (including machine images), data, text, audio, video or images.
 
@@ -51,8 +87,8 @@ available at [https://docs.reduct.store](https://docs.reduct.store)
 **Order Form** means an ordering document for Subscriptions signed by both parties that refers to this Agreement, or
 submitted by you through our platform.
 
-**Service Offerings** means the Support Services (including associated APIs), ReductStore User Plan and ReductStore
-Partner Plan, and any other product or service provided by us under this Agreement.
+**Service Offerings** refer to the Support Services (including associated APIs) 
+and any other products or services provided by us under this Agreement.
 
 **Supported Software** means any software included in your Subscription.
 
@@ -72,6 +108,12 @@ Your Users that is stored in, or run on or through, the Services Offerings. Serv
 ReductStoreSoftware, other ReductStore products and services, and ReductStore intellectual property, and all
 derivative works thereof, do not fall within the meaning of the term "Your Content". Your Content includes any Third
 Party Content that is brought by You into the Services by Your use of the Services or any ReductStore provided tools.
+
+**BUSL-1.1** means Business Source License 1.1. It's a license that permits the use of software under specific conditions 
+for a set period, after which the software transitions to a designated open-source license. Until this changeover, 
+the software is not considered open-source, and the use-case restrictions under BUSL-1.1 are applicable. Post-transition, 
+nothing in these Terms shall limit your rights as per the ensuing open-source license terms. For detailed licensing 
+information, refer to ReductStore's GitHub Repository at [https://github.com/reductstore](https://github.com/reductstore).
 
 ## 2. Order and Structure
 
@@ -119,44 +161,50 @@ ReductStore under this Agreement. Except as provided in this Section 4, nothing 
 Customer any intellectual property rights owned by ReductStore and, for the avoidance of doubt, all intellectual
 property rights in and to any custom feature of the Supported Software created by ReductStore for Customer, or the
 results of any unique implementation of the Supported Software by ReductStore for Customer, or derivative works
-thereof shall continue to be owned by ReductStore. ReductStore may include software that is openly and freely
-licensed under the terms of a public license designated by a third party ("Open Source Software"). Nothing in these
-Terms shall be construed to limit your rights under such Open Source or similar license terms.
+thereof shall continue to be owned by ReductStore. ReductStore may include software that is initially licensed under 
+the terms of the BUSL-1.1. Under the BUSL-1.1, specific use-cases may be restricted for a 
+designated period, after which the software will automatically transition to a specified open-source license. 
+Until this transition, the software is not considered open-source, and the use-case restrictions of the BUSL-1.1 apply. 
+After the transition period, nothing in these Terms shall be construed to limit your rights under the resulting 
+open-source license terms.
 
-4.3. **Service Offerings License Grant**. During the term of this Agreement and subject to Your payment obligations, and
-except as otherwise set forth in this Agreement, you have a non-exclusive, non- assignable, non-sublicensable,
-non-transferable limited right to access and use our Subscription based support and maintenance services that you
-subscribed to including anything developed by ReductStore and delivered to you as in accordance with this Agreement.
-ReductStore develops and supports certain Software ("Supported Software") and provides it as part of the Service
-Offerings. Subject to the terms of this Agreement, ReductStore grants to you a limited, revocable, non-exclusive,
-non- sublicensable, non-transferable license to copy and use the Supported Software solely in connection with your
-permitted use of the Service Offerings. Except as provided in this Section 4.3, you obtain no rights under this
-Agreement from us to the Service Offerings, including any related intellectual property rights. As part of the
-Service Offerings, some ReductStore Supported Software and Third-Party Content may be provided to you under separate
-Open Source licenses. Nothing in these Terms shall be construed to limit your rights under such Open Source or
-similar license terms.
+4.3. **Service Offerings License Grant**. During the term of this Agreement and subject to Your payment obligations, and 
+except as otherwise set forth in this Agreement, you have a non-exclusive, non-assignable, non-sublicensable, 
+non-transferable limited right to access and use our Subscription based support and maintenance services that you subscribed 
+to including anything developed by ReductStore and delivered to you in accordance with this Agreement. ReductStore develops 
+and supports certain Software (“Supported Software”) under the BUSL-1.1, which may contain use-case 
+restrictions. These restrictions will expire after a designated period, and the Supported Software will transition to 
+a specified open-source license. Until that transition, your use of the Supported Software is subject to the terms of the BUSL-1.1 
+and any identified use-case restrictions. Subject to the terms of this Agreement, ReductStore grants to you a limited, 
+revocable, non-exclusive, non-sublicensable, non-transferable license to copy and use the Supported Software solely in 
+connection with your permitted use of the Service Offerings. Except as provided in this Section 4.3, you obtain no rights 
+under this Agreement from us to the Service Offerings, including any related intellectual property rights.
 
 4.4. You are not obligated to provide us with any suggestions or other feedback about the Service Offerings or
 otherwise, but if you do, we may use and modify this feedback without any restriction or payment.
 
-4.5. **License Restrictions**. Customer shall not attempt to copy, duplicate, modify, create derivative works from or
-distribute all or any portion of the Service Offerings including the Supported Software or the Services; access all
-or any part of the Services in order to build a product or service which competes with the ReductStore Services.
-Customer shall not attempt to and shall not assist any third party to: (a) make the Support Services available to any
-third parties (other than affiliates of Customer); (b) distribute any Software or other materials that have been made
-available to Customer by ReductStore in connection with the Support Services. You will make every reasonable effort
-to prevent unauthorized third parties from accessing the Services and shall notify ReductStore promptly of any such
-unauthorized access or use. You may not, or cause or permit others to modify, make derivative works of, disassemble,
-decompile, or reverse engineer any part of the Service Offerings (the foregoing prohibition includes but is not
-limited to review of data structures or similar materials produced by ReductStore), or access or use the Services in
-order to build or support, and/or assist a third party in building or supporting, products or Services competitive to
-ReductStore. You may not, or cause or permit others to license, sell, rent, lease, transfer, assign, distribute,
-display, host, outsource, disclose, permit timesharing, or otherwise commercially exploit or make the Service
-Offerings, ReductStore Programs, Supported Software, ReductStore Content, Services Environments or materials
-available, to any third party, other than as expressly permitted under the terms of the applicable order. Except as
-expressly provided herein no part of the Service Offerings may be copied, reproduced, distributed, republished,
-downloaded, displayed, posted or transmitted in any form or by any means, including but not limited to electronic,
-mechanical, photocopying, recording, or other means.
+4.5. **License Restrictions**. For software governed by the BUSL-1.1, the Customer acknowledges and agrees to the use-case 
+restrictions outlined in the license. These restrictions must be adhered to until the software transitions to its designated 
+open-source license after the specified delay period. Even after this transition, the Customer remains obligated to respect 
+any terms and conditions associated with the resulting open-source license.
+
+The Customer shall not:
+
+* Copy, duplicate, modify, create derivative works from, distribute, or otherwise exploit any portion of the Service 
+Offerings, including the Supported Software or Services.
+* Access or use the Services to build or support products or Services that compete with ReductStore.
+* Make the Support Services available to third parties, excluding Customer's affiliates.
+* Distribute any software or materials provided by ReductStore in relation to the Support Services.
+* The Customer must prevent unauthorized access to the Services and notify ReductStore promptly of any breaches.
+
+No party may:
+
+* Modify, disassemble, decompile, reverse engineer the Service Offerings, including but not limited to reviewing data 
+structures or similar materials from ReductStore.
+* License, sell, rent, lease, transfer, assign, distribute, display, host, outsource, disclose, or otherwise commercially 
+exploit any part of the Service Offerings, ReductStore Programs, Supported Software, ReductStore Content, or Service Environments. 
+This extends to any form of copying, reproduction, or transmission unless expressly permitted.
+
 
 ## 5. Data Protection
 
@@ -168,31 +216,45 @@ reference.
 imposes specific data security or data protection obligations on ReductStore in addition to or different from those
 specified in the Service Specifications.
 
-## 6. Payments and Fees.
+5.3. Open Source Considerations: In the event parts of the Service Offerings transition to an open-source license after 
+the designated delay period per BUSL-1.1, customers must exercise caution and ensure that no sensitive or protected data 
+is intertwined or at risk due to this transition. ReductStore does not assume responsibility for data compromised due 
+to the open-source status of any software component, especially if data protection best practices were not followed 
+by the customer.
 
-6.1. **Fees**.We calculate and bill fees and charges monthly. We may bill you more frequently for fees accrued if we
-suspect that your account is fraudulent or at risk of non-payment. You will pay us the applicable fees and charges
-for use of the Service Offerings as described on the ReductStore Website using one of the payment methods we support.
-Fees and charges for any new Service or new feature of a Service will be effective when we post updated fees and
-charges on the ReductStore Website unless we expressly state otherwise in a notice.
-Our fees are inclusive of all taxes that are payable in respect of the Product or its Use in the jurisdiction in
-which the payment is either made or received. If you have obtained an exemption from the payment of such taxes or
-levies and you provide such information to ReductStore, ReductStore will take reasonable efforts to provide you with
-such invoicing documents as may enable you to obtain a refund or credit for the amount of taxes or levies so paid
-from any relevant revenue authority, if such a refund or credit is available.
+## 6. Payments and Fees
 
-6.2. The Customer will pay, and authorizes ReductStore to charge, using the customer's selected payment method, for
-all applicable fees. Your payment for Subscription is non-refundable, and you may not cancel an Order Form or
-Subscription except as stated in this Agreement. All amounts payable by you under this Agreement will be paid to us
-without setoff or counterclaim, and without any deduction or withholding. Our fees include taxes and you will not pay
-applicable taxes and similar charges, including sales, usage, excise and value added taxes. The Customer is
-responsible for providing complete and accurate billing and contact information. ReductStore may suspend or terminate
-the Subscription if fees are overdue. Customer's account is set to auto-renewal, ReductStore may charge automatically
-for the renewal, unless the Customer notifies ReductStore that the Customer wants to cancel or disable auto-renewal.
-ReductStore may revise service rates by providing the customer at least 30 days notice prior to the next charge.
-Nothing in this Agreement requires either party to pay any income taxes or similar charges of the other party. If
-applicable law requires you to withhold any amount from your payment, you will provide us with copies of documents
-related to your withholding upon our request.
+6.1. **Fees**
+* We calculate and bill fees and charges monthly. We may bill you more frequently for fees accrued if we suspect that 
+your account is fraudulent or at risk of non-payment.
+* Some features or functionalities of ReductStore may be subject to certain conditions or time-based restrictions. 
+Pricing details for these functionalities will be communicated directly to the users as deemed appropriate by ReductStore. 
+It's important to note that any changes or evolutions of these functionalities could lead to adjustments in their pricing.
+* You agree to pay the fees and charges associated with your use of the Service Offerings. Payments can be made through 
+the methods we accept. Keep in mind that our fees encompass all applicable taxes, depending on where the payment takes place. 
+If you qualify for specific tax exemptions and furnish us with the necessary proof, ReductStore will make an effort 
+to provide you with the appropriate invoicing materials. This could potentially assist you in claiming refunds or credits 
+for such taxes.
+* Any new service or feature's fees will become effective once communicated directly to users, unless stated otherwise.
+
+
+6.2. **Billing & Renewals**
+
+* The Customer will pay, and authorizes ReductStore to charge, using the customer's selected payment method, for all applicable fees. 
+* Payments for Subscriptions are non-refundable. Cancellations of Order Forms or Subscriptions are strictly governed by the 
+terms of this Agreement.
+* When making your payments, they will be made without setoff, counterclaim, deduction, or withholding, unless the 
+law requires such actions.
+* The prices we charge include any applicable taxes or related fees. However, if there are additional taxes or charges specific 
+to your situation or location that weren't initially accounted for, you'll be responsible for those payments.
+* In case the Customer's account is set for auto-renewal, ReductStore may automatically charge for the renewal, unless notified 
+otherwise by the Customer. ReductStore reserves the right to revise service rates with a minimum 30-day notice prior to the next 
+billing cycle.
+* Neither party is obligated to pay the other's income taxes or similar charges. If you're legally required to withhold any amount 
+from your payments, you will provide us with relevant documentation upon request.
+* The Customer is obligated to provide complete and accurate billing and contact information. Failure to do so may lead to 
+disruptions in the service.
+* ReductStore reserves the right to suspend or terminate the Subscription if there's an overdue payment.
 
 ## 7. Confidentiality
 
@@ -224,24 +286,27 @@ this Agreement for any reason by providing you at least 30 days’ advance notic
 (i) By Either Party. Either party may terminate this Agreement for cause if the other party is in material breach of
 this Agreement and the material breach remains uncured for a period of 30 days from receipt of notice by the other
 party. No later than the Termination Date, you will close your account.
-(ii) By Us. We may also terminate this Agreement immediately upon notice to you (A) for cause (B) ) You are, or any
+(ii) By Us. We may also terminate this Agreement immediately upon notice to you (A) for cause (B) You are, or any
 User is, in breach of this Agreement (C) You are in breach of your payment obligations under Section 6 (D) in order
-to comply with the law or requests of governmental entities.
+to comply with the law or requests of governmental entities. (E) You or any associated User violates the terms of 
+this Agreement, including compliance with the BUSL-1.1 license.
 
 8.3. **Effect of Termination**.
-a) Generally. Upon the Termination Date:
-(i) except as provided in Section 8.3(b), all your rights under this Agreement immediately terminate;
-(ii) you remain responsible for all fees and charges you have incurred through the Termination Date and are
-responsible for any fees and charges you incur during the post- termination period described in Section 8.3(b);
-(iv) Provisions that survive termination or expiration of this Agreement are those relating to limitation of
-liability, confidentiality, licensing, infringement indemnity, payment and others which by their nature are intended
-to survive.
-(b) Post-Termination. Unless we terminate your use of the Service Offerings pursuant to Section 8.2(b), during the 30
-days following the Termination Date:
-(i) we will not take action to remove from the ReductStore systems any of Your Content as a result of the
-termination; and
-For any use of the Services after the Termination Date, the terms of this Agreement will apply and you will pay the
-applicable fees at the rates under Section 6.
+(a) Generally. Upon the Termination Date:
+(i) All your rights under this Agreement immediately terminat; except as provided in Section 8.3(b).
+(ii) You remain responsible for all fees and charges you've incurred up to the Termination Date.
+(iii) You are responsible for any fees and charges you incur during the post-termination period as described in Section 8.3(b).
+(iv) Provisions that will survive the termination or expiration of this Agreement include those relating to limitations of liability, confidentiality, licensing, infringement indemnity, payment, and any other provisions which by their nature are intended to persist.
+(b) Post-Termination. Unless we terminate your use of the Service Offerings as outlined in Section 8.2(b), during the 30 days following the Termination Date:
+(i) We won't take any action to remove any of Your Content from ReductStore systems due to the termination.
+(ii) For any use of the Services after the Termination Date, the terms of this Agreement will continue to apply, and you will be required to pay the applicable fees as stated under Section 6.
+
+
+
+
+
+
+
 
 ## 9. Indemnification.
 
@@ -255,13 +320,18 @@ described in (a) through (c) above at our then-current hourly rates.
 
 ## 10. Representations and Warranties
 
-10.1 ReductStore represents and warrants that (a) it has the authority to enter into this Agreement, (b) the Support
-Services will be performed in a professional and workmanlike manner by qualified personnel, Customer represents and
-warrants that (a) it has the authority to enter into this Agreement, and (b) its use of the Service Offerings and
-ReductStore Products will comply with all applicable ReductStore Agreements, Terms and Conditions, and it will not
-use the ReductStore Support Services or Supported Software for any illegal activity.
+10.1 Mutual Representations: Both ReductStore and the Customer represent and warrant that they each have the authority 
+to enter into this Agreement.
 
-10.2 THE SERVICE OFFERINGS AND THE SUPPORTED SOFTWARE ARE PROVIDED "AS IS" AND WITHOUT WARRANTIES OF ANY KIND,
+10.2 ReductStore's Representations: ReductStore further represents and warrants that:
+(a) the Support Services will be performed in a professional and workmanlike manner by qualified personnel.
+
+10.3 Customer's Representations: The Customer further represents and warrants that:
+(a) its use of the Service Offerings and ReductStore Products will comply with all applicable ReductStore Agreements, 
+Terms, and Conditions;
+(b) it will not use the ReductStore Support Services or Supported Software for any illegal activity.
+
+10.4 THE SERVICE OFFERINGS AND THE SUPPORTED SOFTWARE ARE PROVIDED "AS IS" AND WITHOUT WARRANTIES OF ANY KIND,
 EXPRESS OR IMPLIED AND ReductStore HEREBY EXPRESSLY DISCLAIMS THE IMPLIED WARRANTIES OF MERCHANTABILITY, NON-
 INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. ReductStore DOES NOT GUARANTEE OR WARRANT THAT THE USE OF THE
 SERVICE OFFERINGS OR SUPPORTED SOFTWARE WILL BE UNINTERRUPTED, COMPLY WITH REGULATORY REQUIREMENTS, BE ERROR-FREE,
@@ -379,13 +449,15 @@ Middletown, Delaware. The Parties exclude the provisions of the United Nations C
 International Sale of Goods from this Agreement and any transactions that may be implemented in connection with this
 Agreement.
 
-## Support Services Addendum
+---
+
+# Support Services Addendum
 
 This Support Services Addendum (this **"Addendum"**) describes the Support Services to be provided under the Agreement
 between Customer and ReductStore. Capitalized terms not defined in this Addendum have the meanings given to them in
 the Agreement.
 
-### 1. Definitions
+## <a id="addendum-1-definitions"></a>1. Definitions
 
 1.1. **Problem** means a failure of the Supported Software to substantially conform to the functional specifications
 set forth in the applicable documentation provided by ReductStore.
@@ -400,7 +472,7 @@ additional fee.
 1.4. **Workaround** means a modification or "patch" for a particular version of the Supported Software, which may be of
 a temporary or interim nature, to help avoid, correct or circumvent a Problem.
 
-### 2. Support Services
+## <a id="addendum-2-support-services"></a>2. Support Services
 
 2.1. **Eligibility**. Upon payment of the applicable Fees, ReductStore shall provide Support Services as further
 described herein. To be eligible to receive Support Services in accordance with this Addendum.
@@ -412,13 +484,9 @@ Upgrades shall be provided to Customer at no charge.
 
 2.3. **Support**. Subject to Section 2.1 of this Addendum, ReductStore shall provide the Support Services described
 herein to assist in Customer’s use of the Supported Software and resolve Problems in the Supported Software through
-direct engineering support delivered remotely via the Internet (email or text chat). ReductStore agrees to use
-commercially reasonable efforts to acknowledge, with a communication from a member of ReductStore’s support team, the
-Problems reported to ReductStore by Customer in less than 48 business hours for Support Plan and 24 business hours
-for Partner Plan after receiving such a report, and to use commercially reasonable efforts to provide Workarounds in
-a prompt manner.
-For Customer subscribing to ReductStore Partner plan, ReductStore shall provide Annual Solution Review of the Service
-Offering.
+direct engineering support delivered remotely via the Internet (email or text chat). ReductStore agrees to use commercially 
+reasonable efforts to acknowledge, with a communication from a member of ReductStore’s support team, the Problems reported 
+to ReductStore by Customer in less than 48 business hours after receiving such a report
 
 2.4. **Customer Information**. To assist in expeditiously resolving a Problem, the Customer should record the following
 information for reference and should provide the information to ReductStore: (a) error messages and indications that
@@ -432,7 +500,7 @@ efforts until the Problem is reasonably addressed; provided, however, that Custo
 inquiries and other requests from ReductStore to assist in reproducing and resolving the Problem, including as set
 forth in Section 4 of this Addendum.
 
-### 3. Optional Maintenance and Support Services
+## <a id="addendum-3-optional-maintenance-and-support-services"></a>3. Optional Maintenance and Support Services
 
 3.1. **On-Site Support Services**. For an additional fee, Customer may elect to receive on-site support and maintenance.
 
@@ -446,7 +514,7 @@ related to Problems caused by issues other than the Supported Software.
 related to maintenance and support services requested by Customer that are beyond the scope of this Addendum, including
 costs for meals, lodging and travel.
 
-### 4. Obligations of Customer
+## <a id="addendum-4-obligations-of-customer"></a>4. Obligations of Customer
 
 4.1. **Point of Contact**. Customer shall designate an Authorized Representative as Admin who will be responsible for
 payments for the Service Offerings and other account-specific details.
@@ -488,7 +556,7 @@ software not supplied or supported by ReductStore; (c) fails to install any Upda
 Software if such Updates and Upgrades would have resolved the Problem; or (d) otherwise uses the Supported Software
 in a manner not in accordance with the Agreement, applicable documentation or ReductStore’s instructions.
 
-### 5. Limitation On Maintenance And Support
+## <a id="addendum-5-limitation-on-maintenance-and-support"></a>5. Limitation On Maintenance And Support
 
 5.1. **Customer Defects**. ReductStore shall have no obligation to repair or address any Problem that is due to
 Customer’s incorrect or improper use of the Supported Software or failure to comply with the terms of this Agreement.
