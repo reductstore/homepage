@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ReductStore vs. MinIO & InfluxDB: Who Really Wins the Speed Race?"
+title: "ReductStore vs. MinIO & InfluxDB on LTE Network: Who Really Wins the Speed Race?"
 description: The article presents the result of benchmrking ReductStore vs. MinIO and InfluxDB on an edge device.
 date: 2023-09-13
 author: Anthony Cavin
@@ -31,7 +31,7 @@ Let's roll up our sleeves and deep-dive into this benchmarking analysis to separ
 
 In the world of IoT, while we usually see data being written piece by piece, following a time-series pattern, but it's a different story when we transfer it to the cloud. Here, we're reading data in big batches, especially when we're talking about performing data backups, running large-scale analytics, or feeding machine learning models.
 
-Hence, the focus for this benchmark is to understand batch read performance. We track the read times of precisely 1,000 blobs, striking a balance between large-scale operations and fine-grained performance metrics. 
+Hence, the focus for this benchmark is to understand batch read performance over an LTE network. We track the read times of precisely 1,000 blobs, striking a balance between large-scale operations and fine-grained performance metrics. 
 
 The blob size is not static; it varies from a small 1KiB to a larger 1MiB. This variation allows us to observe how system performance adjusts with fluctuating data sizes, an essential aspect given the dynamic nature of real-world data. 
 
