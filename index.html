@@ -6,54 +6,8 @@ permalink: /
 
 <div id="features" xmlns="http://www.w3.org/1999/html">
     <div class="container">
-        <div class="row centered">
-            <!-- Feature: Storing and accessing unstructured data as time series -->
-            <div class="col-md-4">
-                <i class="fa fa-clock" aria-hidden="true"></i>
-                <span class="sr-only">An image of a clock representing time series</span>
-                <h3>Time Series Blob Storage</h3>
-                <p>Capture and access blob data as time series, tailored for edge computing,
-                    computer vision, and IoT.</p>
-            </div>
-            <!-- Feature: No limit for maximum size of blob -->
-            <div class="col-md-4">
-                <i class="fa fa-infinity" aria-hidden="true"></i>
-                <span class="sr-only">An image of the infinity symbol</span>
-                <h3>No Size Limit for Blobs</h3>
-                <p>ReductStore handles blob data without size limits; your disk capacity is the only boundary.</p>
-            </div>
-            <!-- Feature: Real-time FIFO bucket quota -->
-            <div class="col-md-4">
-                <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
-                <span class="sr-only">An image of a speedometer</span>
-                <h3>Real-Time FIFO Quota</h3>
-                <p>Ensure optimal storage management with FIFO quotas, preventing disk space shortages in real-time.</p>
-            </div>
-        </div>
-        <div class="row centered">
-            <!-- Feature: Labeling data for annotation and filtering -->
-            <div class="col-md-4">
-                <i class="fa fa-tags" aria-hidden="true"></i>
-                <span class="sr-only">An image of labels</span>
-                <h3>Data Labeling & Filtering</h3>
-                <p>Manage your time-series blob data with ease: annotate, filter, and save AI labels or meta-data.</p>
-            </div>
-            <!-- Feature: HTTP(S) API -->
-            <div class="col-md-4">
-                <i class="fa fa-cloud-upload-alt" aria-hidden="true"></i>
-                <span class="sr-only">An image of a cloud with an upward arrow</span>
-                <h3>Advanced HTTP(S) API</h3>
-                <p>Integrate and communicate with ReductStore using our feature-rich and secure API.</p>
-            </div>
-            <!-- Feature: Data Batching -->
-            <div class="col-md-4">
-                <i class="fa fa-layer-group" aria-hidden="true"></i>
-                <span class="sr-only">An image representing data batching</span>
-                <h3>Efficient Data Batching</h3>
-                <p>Minimize network overhead in areas with high latency by fetching records in batched HTTP responses.
-                </p>
-            </div>
-        </div>
+        {% include main_page/features.html %}
+
         <div class="row centered">
             <a href="/download" class="btn btn-lg btn-theme" style="margin: 1em; padding: 1em"
                aria-label="Download">Download</a>
@@ -62,83 +16,20 @@ permalink: /
 
         <div class="hline"></div>
 
-        <div>
-            {% include testimonial.html %}
-        </div>
+        {% include main_page/testimonial.html %}
 
         <div class="hline"></div>
-        <div class="main-page-section">
-            <div class="row vertical">
-                <div class="col-md-7 col-md-offset-0 text-left hidden-sm hidden-xs" style="padding: 20px">
-                    {% include examples.html %}
-                </div>
-                <div class="col-md-5 col-md-offset-0">
-                    <div class="text-center">
-                        <h3>ReductStore Client SDKs</h3>
-                        <div>
-                            You can use the following client SDKs for quick and easy
-                            integration into your applications and infrastructure:
-                            <div class="text-center" style="margin-top: 20px">
-                                <a href="https://github.com/reductstore/reduct-py" style="padding: 10px">
-                                    <img src="assets/img/blog/thumbs/python.png"
-                                         alt="ReductStore Client SDK for Python"/>
-                                </a>
-                                <a href="https://github.com/reductstore/reduct-js" style="padding: 10px">
-                                    <img src="assets/img/blog/thumbs/js.png"
-                                         alt="ReductStore Client SDK for JavaScript"/>
-                                </a>
-                                <a href="https://github.com/reductstore/reduct-cpp" style="padding: 10px">
-                                    <img src="assets/img/blog/thumbs/cpp.png" alt="ReductStore Client SDK for C++"/>
-                                </a>
-                                <a href="https://github.com/reductstore/reductstore/tree/main/reduct_rs"
-                                   style="padding: 10px">
-                                    <img src="assets/img/blog/thumbs/rust.png" alt="ReductStore Client SDK for Rust"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hline"></div>
-        <div class="main-page-section">
-            <div class="row centered vertical">
-                <div class="col-md-5">
-                    <h3>Web Console</h3>
-                    <p>
-                        ReductStore has an integrated
-                        <a href="https://github.com/reductstore/web-console">web console</a>
-                        that allows you to easily manage your data and access to it.
-                    </p>
-                </div>
 
-                <div class="col-md-7 col-md-offset-0 hidden-sm hidden-xs" style="padding: 20px">
-                    <a href="https://github.com/reductstore/web-console">
-                        <img src="assets/img/web-console.png" class="img-rounded" alt="ReductStore Web Console"/>
-                        <!--                            <img src="assets/img/blog/thumbs/web-console.png" alt="ReductStore Web Console"/>-->
-                    </a>
-                </div>
-            </div>
-        </div>
+        {% include main_page/sdks.html %}
 
         <div class="hline"></div>
-        <div class="main-page-section">
-            <div class="row vertical">
-                <div class="col-md-7 hidden-sm hidden-xs" style="padding: 20px">
-                    {% include snippets/rcl.html %}
-                </div>
-                <div class="col-md-5 centered">
-                    <h3>CLI Client</h3>
-                    <p>
-                        You can manage your ReductStore instance and export data from it by
-                        using
-                        <a href="http://github.com/reductstore/reduct-cli">ReducStore CLI client</a>. The client is
-                        cross-platform, written in Python and available as
-                        a PIP package.
-                    </p>
-                </div>
-            </div>
-        </div>
+
+        {% include main_page/web_console.html %}
+
+        <div class="hline"></div>
+
+        {% include main_page/cli.html %}
+
     </div>
 </div>
 <!--/container -->
