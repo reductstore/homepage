@@ -1,13 +1,37 @@
-<div id="twrap">
-    <div id="twrapback"></div>
+<div id="">
     <div class="container centered">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-            <i class="fa fa-comment-o"></i>
-            <p>{{ site.testimonial.message }}</p>
-            <h4><br/>{{ site.testimonial.author }}</h4>
-            <p>{{ site.testimonial.position }}</p>
+            {% for testimonial in site.testimonials %}
+            <div class="col-xs-8 col-md-4">
+                <a href="{{testimonial.homepage}}" class="thumbnail">
+                    <img src="{{ testimonial.image }}" alt="{{testimonial.company}}" class=""/>
+                </a>
+                <div class="">
+
+                    <span style="font-style: italic">"{{ testimonial.message }}"</span>
+                </div>
             </div>
-        </div><! --/row -->
-    </div><! --/container -->
-</div><! --/twrap -->
+            {% endfor %}
+        </div>
+
+        <div class="spacing"></div>
+        <div class="row">
+            {% for testimonial in site.testimonials %}
+            <div class="col-xs-8 col-md-4">
+
+                <div class="text-right">
+                    <div style="font-weight: bolder"> {{ testimonial.author }}</div>
+                    {{ testimonial.position }} at {{
+                    testimonial.company }}
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+        <! --/row -->
+    </div>
+    <div class="spacing"></div>
+
+    <! --/container -->
+</div>
+<! --/twrap -->
