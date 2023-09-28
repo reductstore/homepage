@@ -74,3 +74,28 @@ defaults:
       path: ""
     values:
       image: assets/img/logo_default.jpg
+
+
+testimonials:
+
+  - message: "With ReductStore's approach to data retention, we have forgotten about the disk overrun problems on our edge devices."
+    author: Ingo Kaiser
+    position: CEO and Co-founder
+    company: PANDA GmbH
+    homepage: https://panda.technology
+    image: assets/img/testimonials/panda.png
+
+  - message: "The main reason for choosing ReductStore was that it was quick and easy to deploy, use and integrate. This allowed us to have a working system up and running and ingesting data within a day."
+    author: Daniel Wedlund
+    position: Founder
+    company: Mounte AB
+    homepage: https://mounte.se
+    image: assets/img/testimonials/mounte.png
+
+
+  - message: "ReductStore is a vital part of our infrastructure. It handles terabytes of unstructured data in a production environment."
+    author: Michael Welsh
+    position: Founder
+    company: Metric Space UG
+    homepage: https://www.metric-space.ai/
+    image: assets/img/testimonials/metric-space.png

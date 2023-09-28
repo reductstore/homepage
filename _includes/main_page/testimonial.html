@@ -1,0 +1,27 @@
+<div id="testimonials">
+    <div class=" container centered">
+
+        <div class="row">
+            {% for testimonial in site.testimonials %}
+            <div class="col-sm-12  col-md-4">
+                <img src="{{ testimonial.image }}" alt="{{testimonial.company}}"/>
+                <div style="min-height: 11em">
+                    <span style="font-style: italic">"{{ testimonial.message }}"</span>
+                </div>
+
+                <div class="text-right">
+                    <div style="font-weight: bolder"> {{ testimonial.author }}</div>
+                    {{ testimonial.position }} at <a href="{{testimonial.homepage}}"> {{
+                    testimonial.company }} </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <! --/row -->
+    </div>
+    <div class="spacing"></div>
+
+    <! --/container -->
+</div>
+<! --/twrap -->
