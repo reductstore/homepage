@@ -1,33 +1,23 @@
-<div id="">
-    <div class="container centered">
+<div id="testimonials">
+    <div class=" container centered">
+
         <div class="row">
             {% for testimonial in site.testimonials %}
-            <div class="col-xs-8 col-md-4">
-                <a href="{{testimonial.homepage}}" class="thumbnail">
-                    <img src="{{ testimonial.image }}" alt="{{testimonial.company}}" class=""/>
-                </a>
-                <div class="">
-
+            <div class="col-sm-12  col-md-4">
+                <img src="{{ testimonial.image }}" alt="{{testimonial.company}}"/>
+                <div style="min-height: 11em">
                     <span style="font-style: italic">"{{ testimonial.message }}"</span>
                 </div>
-            </div>
-            {% endfor %}
-        </div>
-
-        <div class="spacing"></div>
-        <div class="row">
-            {% for testimonial in site.testimonials %}
-            <div class="col-xs-8 col-md-4">
 
                 <div class="text-right">
                     <div style="font-weight: bolder"> {{ testimonial.author }}</div>
-                    {{ testimonial.position }} at {{
-                    testimonial.company }}
+                    {{ testimonial.position }} at <a href="{{testimonial.homepage}}"> {{
+                    testimonial.company }} </a>
                 </div>
             </div>
-
             {% endfor %}
         </div>
+
         <! --/row -->
     </div>
     <div class="spacing"></div>
