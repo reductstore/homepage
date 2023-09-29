@@ -11,18 +11,19 @@
         </div>
         <div class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
-                <li {% if page.title=="Home" %}class="active" {% endif %}><a href="{{"/" | append: site.baseurl }}">HOME</a>
-                <li {% if page.title=="ReductStore Pricing" %}class="active" {% endif %}><a href="{{"/pricing" | prepend:
-                site.baseurl
-                }}">PRICING</a>
+                <li {% if page.title=="Home" %}class="active" {% endif %}><a href="{{" /" | append: site.baseurl
+                        }}">HOME</a>
+                <li {% if page.title=="Reduct AI" %}class="active" {% endif %}><a href="{{" /reductai" | append:
+                        site.baseurl }}">REDUCT AI</a>
+                <li {% if page.title=="ReductStore Pricing" %}class="active" {% endif %}><a href="{{" /pricing" |
+                        prepend: site.baseurl }}">PRICING</a>
                 </li>
-                <li {% if page.title=="Download ReductStore" %}class="active" {% endif %}><a href="{{"/download" | prepend:
-                    site.baseurl
-                    }}">DOWNLOAD</a>
+                <li {% if page.title=="Download ReductStore" %}class="active" {% endif %}><a href="{{" /download" |
+                        prepend: site.baseurl }}">DOWNLOAD</a>
                 </li>
 
-                <li {% if page.title=="ReductStore's Blog" %}class="active" {% endif %}><a href="{{"/blog" | prepend: site.baseurl
-                }}">BLOG</a>
+                <li {% if page.title=="ReductStore's Blog" %}class="active" {% endif %}><a href="{{" /blog" | prepend:
+                        site.baseurl }}">BLOG</a>
                 </li>
                 <li><a href="https://docs.reduct.store">DOCS</a></li>
                 <li><a href="https://github.com/reductstore/reductstore">GITHUB</a></li>

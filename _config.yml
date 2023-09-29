@@ -10,7 +10,6 @@ url: "https://www.reduct.store"
 # Build settings
 markdown: kramdown
 
-
 # Markdown Processors
 kramdown:
   input: GFM
@@ -34,6 +33,9 @@ colors: #in hex code if not noted else
   footer_heading: "#ffffff"
   footer_content: "#bfc9d3"
 
+# Page directory
+include:
+  - _pages
 
 ### CONTACT SETTINGS ###
 
@@ -91,7 +93,6 @@ testimonials:
     company: Mounte AB
     homepage: https://mounte.se
     image: assets/img/testimonials/mounte.png
-
 
   - message: "ReductStore is a vital part of our infrastructure. It handles terabytes of unstructured data in a production environment."
     author: Michael Welsh
