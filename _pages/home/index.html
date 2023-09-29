@@ -6,29 +6,29 @@ permalink: /
 
 <div id="features" xmlns="http://www.w3.org/1999/html">
     <div class="container">
-        {% include main_page/features.html %}
+        {% include_relative features.html %}
 
         <div class="row centered">
             <a href="/download" class="btn btn-lg btn-theme" style="margin: 1em; padding: 1em"
-               aria-label="Download">Download</a>
+                aria-label="Download">Download</a>
             <a href="/pricing" class="btn btn-lg btn-danger" style="padding: 1em" aria-label="Pricing">Pricing</a>
         </div>
 
         <div class="hline"></div>
 
-        {% include main_page/testimonial.html %}
+        {% include_relative testimonial.html %}
 
         <div class="hline"></div>
 
-        {% include main_page/sdks.html %}
+        {% include_relative sdks.html %}
 
         <div class="hline"></div>
 
-        {% include main_page/web_console.html %}
+        {% include_relative web_console.html %}
 
         <div class="hline"></div>
 
-        {% include main_page/cli.html %}
+        {% include_relative cli.html %}
 
     </div>
 </div>
