@@ -6,32 +6,40 @@ permalink: /
 
 {% include_relative hero.html %}
 
-<div id="features" xmlns="http://www.w3.org/1999/html">
-    <div class="container">
-        <div class="row centered">
-            <a href="/download" class="btn btn-lg btn-theme" style="margin: 1em; padding: 1em"
-                aria-label="Download">Download</a>
-            <a href="/pricing" class="btn btn-lg btn-danger" style="padding: 1em" aria-label="Pricing">Pricing</a>
-        </div>
-
+<div class="container">
+    <div id="banner">
         {% include_relative features.html %}
-
-        <div class="hline"></div>
-
-        {% include_relative testimonial.html %}
-
-        <div class="hline"></div>
-
-        {% include_relative sdks.html %}
-
-        <div class="hline"></div>
-
-        {% include_relative web_console.html %}
-
-        <div class="hline"></div>
-
-        {% include_relative cli.html %}
-
     </div>
+
+    <div class="hline"></div>
+
+    <div id="banner">
+        {% include_relative testimonial.html %}
+    </div>
+
+    <div class="hline"></div>
+
+    <div id="banner">
+        {% include_relative sdks.html %}
+    </div>
+
+    <div class="hline"></div>
+
+    <div id="banner">
+        {% include_relative web_console.html %}
+    </div>
+
+    <div class="hline"></div>
+
+    <div id="banner">
+        {% include_relative cli.html %}
+    </div>
+
+    <div class="hline"></div>
+
+    <div id="banner">
+        {% include_relative cta.html %}
+    </div>
+
 </div>
 <!--/container -->

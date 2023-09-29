@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="row">
+
+    <!-- Left side -->
+    <div class="col-md-6">
+      <h2>Edge AI at the Speed of Now: Choosing the Best Real-Time Databases
+        for Your AI Applications.</h2>
+
+      <p>Dive into the world of edge computing with our white paper.</p>
+
+      <form id="whitePaperForm" role="form" action="https://formspree.io/f/xleylpzp" method="POST">
+        <div class="form-group">
+          <label for="InputNameWhitePaper">Name</label>
+          <input type="text" class="form-control" id="InputNameWhitePaper" name="name">
+        </div>
+        <div class="form-group">
+          <label for="InputCompanyWhitePaper">Company</label>
+          <input type="text" class="form-control" id="InputCompanyWhitePaper" name="company">
+        </div>
+        <div class="form-group">
+          <label for="InputEmailWhitePaper">Email <span class="text-danger">*</span></label>
+          <input type="email" class="form-control" id="InputEmailWhitePaper" name="email" required>
+        </div>
+        <button type="submit" class="btn contact">Download our White Paper</button>
+      </form>
+      <div id="thankYouMessage" style="display:none;">
+        <p>Thank you for downloading our white paper!</p>
+        <p>Can't see the file? Try <a
+            href="https://storage.googleapis.com/reductstore_document/ReductStore_EdgeAI_RealTimeDatabases.pdf"
+            target="_blank">this direct access link</a>.</p>
+      </div>
+    </div>
+
+    <!-- Right side (Image) -->
+    <div class="col-md-6 hidden-xs hidden-sm text-center">
+      <div class="table-responsive">
+        <div class="table-cell" style="height: 580px; vertical-align: middle; padding: 20px;">
+          <img src="assets/img/whitepaper/whitepaper.jpg" alt="White Paper Cover" class="img-rounded center-block"
+            style="max-height: 100%">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  document.getElementById('whitePaperForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Send the form data
+    fetch('https://formspree.io/f/xleylpzp', {
+      method: 'POST',
+      body: new FormData(this),
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.ok) {
+          // Hide the form
+          document.getElementById('whitePaperForm').style.display = 'none';
+
+          // Display the thank you message
+          document.getElementById('thankYouMessage').style.display = 'block';
+
+          // Open the PDF in a new tab
+          window.open('https://storage.googleapis.com/reductstore_document/ReductStore_EdgeAI_RealTimeDatabases.pdf', '_blank');
+        } else {
+          alert('Something went wrong. Please try again.');
+        }
+      })
+      .catch(error => {
+        alert('Error: ' + error);
+      });
+  });
+</script>
