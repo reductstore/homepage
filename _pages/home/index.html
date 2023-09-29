@@ -4,15 +4,17 @@ title: Home
 permalink: /
 ---
 
+{% include_relative hero.html %}
+
 <div id="features" xmlns="http://www.w3.org/1999/html">
     <div class="container">
-        {% include_relative features.html %}
-
         <div class="row centered">
             <a href="/download" class="btn btn-lg btn-theme" style="margin: 1em; padding: 1em"
                 aria-label="Download">Download</a>
             <a href="/pricing" class="btn btn-lg btn-danger" style="padding: 1em" aria-label="Pricing">Pricing</a>
         </div>
+
+        {% include_relative features.html %}
 
         <div class="hline"></div>
 
