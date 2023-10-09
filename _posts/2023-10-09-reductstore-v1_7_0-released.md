@@ -20,6 +20,8 @@ To download the latest released version, please visit our [Download Page](https:
 ReductStore v1.7.0 introduces two new features that make it easier to provision resources and write data in batches, which can improve your performance and efficiency when using ReductStore for edge computing and AI applications.
 
 
+<!--more-->
+
 ## Provisioning With Environment Variables
 
 ReductStore allows you to manage resources such as buckets and access tokens through its HTTP API. However, if you follow the Infrastructure as Code approach, you may want to provision them in your DevOps infrastructure. This is now possible with environment variables:
