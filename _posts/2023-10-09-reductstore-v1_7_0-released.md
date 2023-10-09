@@ -46,19 +46,22 @@ Read [the documentation](https://docs.reduct.store/configuration#provisioning) f
 We’re continually working on the performance of our database. In this version, we implemented the  [POST /api/v1/b/:bucket/:entry/batch](https://docs.reduct.store/http-api/entry-api#write-batch-of-records) endpoint, which receives a batch of records in one HTTP request.  This can help you with HTTP overhead when you write many small records intensely. The official client SDK already supports for this feature and in [Python](https://github.com/reductstore/reduct-py), you can do it in this way:
 
 ```python
-# Create a client for interacting with a ReductStore service
-client = Client("http://localhost:8383")
+from reduct import Client, Bucket, Batch
 
-# Create a bucket and store a reference to it in the `bucket` variable
-bucket: Bucket = await client.create_bucket("my-bucket", exist_ok=True)
-
-# Prepare a batch
-batch = Batch()
-batch.add(timestamp=1000, data=b"new")
-batch.add(timestamp=2000, data=b"reocrd")
-
-# Write it
-await bucket.write_batch("entry-3", batch)
+async def main():
+    # Create a client for interacting with a ReductStore service
+    client = Client("http://localhost:8383")
+    
+    # Create a bucket and store a reference to it in the `bucket` variable
+    bucket: Bucket = await client.create_bucket("my-bucket", exist_ok=True)
+    
+    # Prepare a batch
+    batch = Batch()
+    batch.add(timestamp=1000, data=b"new")
+    batch.add(timestamp=2000, data=b"reocrd")
+    
+    # Write it
+    await bucket.write_batch("entry-3", batch)
 ```
 
 Check out our [other SDKs](https://github.com/reductstore/reductstore#client-sdks) to learn how to write batch data.
