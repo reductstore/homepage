@@ -9,7 +9,6 @@ categories:
 
 - news
 ---
-# ReductStore v1.7.0 has been released with provisioning and batch writing
 
 We are pleased to announce the release of the latest minor version of [ReductStore](https://www.reduct.store/), [1.7.0](https://github.com/reductstore/reductstore/releases/tag/v1.7.0). ReductStore is a time series database designed for storing and managing large amounts of blob data.
 
