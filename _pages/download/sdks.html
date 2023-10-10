@@ -1,0 +1,68 @@
+<h2>Client SDKs</h2>
+<div class="hline"></div>
+
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active">
+    <a
+      href="#{{include.prefix}}-python"
+      aria-controls="{{include.prefix}}-python"
+      role="tab"
+      data-toggle="tab"
+      >Python</a
+    >
+  </li>
+  <li role="presentation">
+    <a
+      href="#{{include.prefix}}-nodejs"
+      aria-controls="{{include.prefix}}-nodejs"
+      role="tab"
+      data-toggle="tab"
+      >Node.js</a
+    >
+  </li>
+  <li role="presentation">
+    <a
+      href="#{{include.prefix}}-cpp"
+      aria-controls="{{include.prefix}}-cpp"
+      role="tab"
+      data-toggle="tab"
+      >C++ (cmake)</a
+    >
+  </li>
+  <li role="presentation">
+    <a
+      href="#{{include.prefix}}-rust"
+      aria-controls="{{include.prefix}}-rust"
+      role="tab"
+      data-toggle="tab"
+      >Rust</a
+    >
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="{{include.prefix}}-python">
+    <pre><code>pip install -U reduct-py</code></pre>
+  </div>
+
+  <div role="tabpanel" class="tab-pane" id="{{include.prefix}}-nodejs">
+    <pre><code>npm i reduct-js</code></pre>
+  </div>
+
+  <div role="tabpanel" class="tab-pane" id="{{include.prefix}}-cpp">
+    <pre><code>include(FetchContent)
+
+FetchContent_Declare(
+    ReductCpp
+    GIT_REPOSITORY https://github.com/reductstore/reduct-cpp.git
+    GIT_TAG {{ site.projects.reduct_storage.version }}
+)
+
+find_package(ReductCpp)</code></pre>
+  </div>
+
+  <div role="tabpanel" class="tab-pane" id="{{include.prefix}}-rust">
+    <pre><code>cargo install reduct-rs</code></pre>
+  </div>
+</div>
