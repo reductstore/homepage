@@ -43,7 +43,7 @@ Read [the documentation](https://docs.reduct.store/configuration#provisioning) f
 
 ## Batch Writing
 
-We’re continually working on the performance of our database. In this version, we implemented the  [POST /api/v1/b/:bucket/:entry/batch](https://docs.reduct.store/http-api/entry-api#write-batch-of-records) endpoint, which receives a batch of records in one HTTP request.  This can help you with HTTP overhead when you write many small records intensely. The official client SDK already supports for this feature and in [Python](https://github.com/reductstore/reduct-py), you can do it in this way:
+We’re continually working on the performance of our database. In this version, we implemented the  [POST /api/v1/b/:bucket/:entry/batch](https://docs.reduct.store/http-api/entry-api#write-batch-of-records) endpoint, which receives a batch of records in one HTTP request.  This can help in reducing HTTP overhead when you're frequently writing numerous small records. The official client SDK already has support for this feature, and in [Python](https://github.com/reductstore/reduct-py), it can be implemented as follows:
 
 ```python
 from reduct import Client, Bucket, Batch
