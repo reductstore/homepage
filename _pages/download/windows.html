@@ -1,6 +1,8 @@
 <h2>ReductStore Server</h2>
 <div class="hline"></div>
 
+<p>Compatible with the amd64 architecture.</p>
+
 <pre><code>Invoke-WebRequest -Uri  https://github.com/reductstore/reductstore/releases/download/{{ site.projects.reductstore.version }}/reductstore.win-amd64.zip -OutFile reductstore.zip
 Expand-Archive -LiteralPath reductstore.zip -DestinationPath .
 .\reductstore.exe</code></pre>
