@@ -4,68 +4,64 @@ title: Download ReductStore
 description: Download page for ReductStore and its SDKs with download links and instructions for Linux, Windows and macOS.
 permalink: /download
 ---
-<p>
-    ReductStore supports Linux, macOs and Windows on AMD64 platform.
-</p>
+
 <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active">
-        <a href="#linux" aria-controls="python" role="tab" data-toggle="tab">Linux</a>
-    </li>
-    <li role="presentation">
-        <a href="#macOs" aria-controls="js" role="tab" data-toggle="tab">macOs</a>
-    </li>
-    <li role="presentation">
-        <a href="#windows" aria-controls="cpp" role="tab" data-toggle="tab">Windows</a>
-    </li>
+  <li role="presentation" class="active">
+    <a href="#docker" aria-controls="docker" role="tab" data-toggle="tab"
+      >Docker</a
+    >
+  </li>
+  <li role="presentation">
+    <a href="#linux" aria-controls="python" role="tab" data-toggle="tab"
+      >Linux</a
+    >
+  </li>
+  <li role="presentation">
+    <a href="#macOs" aria-controls="js" role="tab" data-toggle="tab">macOs</a>
+  </li>
+  <li role="presentation">
+    <a href="#windows" aria-controls="cpp" role="tab" data-toggle="tab"
+      >Windows</a
+    >
+  </li>
+  <li role="presentation">
+    <a href="#azure" aria-controls="azure" role="tab" data-toggle="tab"
+      >Azure</a
+    >
+  </li>
 </ul>
 
 <!-- Tab panes -->
 <div class="tab-content" id="UsageTab">
-    <div role="tabpanel" class="tab-pane active" id="linux">
-        <h2>ReductStore</h2>
-        <div class="hline"></div>
+  <div role="tabpanel" class="tab-pane active" id="docker">
+    {% include_relative docker.html %}{% include_relative sdks.html
+    prefix="docker" %} {% include_relative cli.html %}
+  </div>
 
-        <h4>Binary</h4>
+  <div role="tabpanel" class="tab-pane" id="linux">
+    {% include_relative linux.html %} {% include_relative sdks.html
+    prefix="linux" %} {% include_relative cli.html %}
+  </div>
 
-        <pre><code>    wget https://github.com/reductstore/reductstore/releases/download/{{ site.projects.reductstore.version }}/reductstore.linux-amd64.tar.gz
-    tar xfv reductstore.linux-amd64.tar.gz
-    chmod +x reductstore
-    RS_DATA_PATH=./data ./reductstore</code></pre>
-        <h4>Docker</h4>
-        <pre><code>    docker run -p 8383:8383 -v ${PWD}/data:/data reduct/store:latest</code></pre>
-        <h4>Snap</h4>
-        <pre><code>    sudo snap install reductstore</code></pre>
+  <div role="tabpanel" class="tab-pane" id="macOs">
+    {% include_relative macos.html %} {% include_relative sdks.html
+    prefix="macOs" %} {% include_relative cli.html %}
+  </div>
 
-        {% include download_sdks.html %}
-        {% include download_cli.html %}
-    </div>
-    <div role="tabpanel" class="tab-pane" id="macOs">
-        <h2>ReductStore</h2>
-        <div class="hline"></div>
-
-        <h4>Binary</h4>
-        <pre><code>    wget https://github.com/reductstore/reductstore/releases/download/{{ site.projects.reductstore.version }}/reductstore.macos-amd64.tar.gz
-    tar xfv reductstore.macos-amd64.tar.gz
-    chmod +x reductstore
-    RS_DATA_PATH=./data ./reductstore</code></pre>
-        {% include download_sdks.html %}
-        {% include download_cli.html %}
-    </div>
-    <div role="tabpanel" class="tab-pane" id="windows">
-        <h2>ReductStore</h2>
-        <div class="hline"></div>
-
-        <h4>Binary</h4>
-        <pre><code>    Invoke-WebRequest -Uri  https://github.com/reductstore/reductstore/releases/download/{{ site.projects.reductstore.version }}/reductstore.win-amd64.zip -OutFile reductstore.zip
-    Expand-Archive -LiteralPath reductstore.zip -DestinationPath .
-    .\reductstore.exe</code></pre>
-
-        {% include download_sdks.html %}
-        {% include download_cli.html %}
-    </div>
+  <div role="tabpanel" class="tab-pane" id="windows">
+    {% include_relative windows.html %}{% include_relative sdks.html
+    prefix="windows" %} {% include_relative cli.html %}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="azure">
+    {% include_relative azure.html %}{% include_relative sdks.html
+    prefix="azure" %} {% include_relative cli.html %}
+  </div>
 </div>
 <p>
-    All the binaries and source code are available on <a
-        href="https://github.com/reductstore/reductstore/releases/tag/{{ site.projects.reductstore.version }}">the
-    release page</a>
+  All the binaries and source code are available on
+  <a
+    href="https://github.com/reductstore/reductstore/releases/tag/{{ site.projects.reductstore.version }}"
+    target="_blank"
+    >the release page</a
+  >
 </p>

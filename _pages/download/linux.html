@@ -1,0 +1,28 @@
+<h2>ReductStore Server</h2>
+<div class="hline"></div>
+
+<p>Compatible with the amd64 architecture.</p>
+
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active">
+    <a href="#binary" aria-controls="binary" role="tab" data-toggle="tab"
+      >Binary</a
+    >
+  </li>
+  <li role="presentation">
+    <a href="#snap" aria-controls="snap" role="tab" data-toggle="tab">Snap</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="binary">
+    <pre><code>wget https://github.com/reductstore/reductstore/releases/download/{{ site.projects.reductstore.version }}/reductstore.linux-amd64.tar.gz
+tar xfv reductstore.linux-amd64.tar.gz
+chmod +x reductstore
+RS_DATA_PATH=./data ./reductstore</code></pre>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="snap">
+    <pre><code>sudo snap install reductstore</code></pre>
+  </div>
+</div>
