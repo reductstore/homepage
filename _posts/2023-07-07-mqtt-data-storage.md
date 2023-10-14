@@ -11,7 +11,7 @@ categories:
 
 Choosing the right database can be overwhelming–trust me, I know.
 
-![Photo by Jan Antonin Kolar](https://storage.googleapis.com/reductstore_blog_images/jan-antonin-kolar.jpg "Photo by Jan Antonin Kolar")
+![Photo by Jan Antonin Kolar](/assets/blog/2023-07-07/jan-antonin-kolar.jpeg "Photo by Jan Antonin Kolar")
 <small>Photo by [Jan Antonin Kolar](https://unsplash.com/ja/@jankolar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/photos/lRoX0shwjUQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}</small>
 
 Since joining ReductStore's project, I've been exploring alternative solutions to get a better understanding about how the project fits into current echosystem. I found all kind of databases, from the most popular ones to the most obscure ones.
@@ -39,7 +39,7 @@ MQTT is a publish-subscribe messaging protocol that allows devices to send and r
 
 In an MQTT-based system, devices (known as publishers) publish messages to a central broker, which then distributes these messages to other devices (known as subscribers) that have subscribed to specific topics. The subscriber can then process the message and take appropriate action. For example, a sensor may publish a message containing its current temperature, which is then received by a subscriber that has subscribed to the topic "temperature".
 
-![Example of Pub/Sub architecture](https://storage.googleapis.com/reductstore_blog_images/example-pub-sub.jpg "Example of Pub/Sub architecture")
+![Example of Pub/Sub architecture](/assets/blog/2023-07-07/example-pub-sub.jpeg "Example of Pub/Sub architecture")
 <small>Example of Pub/Sub architecture (image by author)</small>
 
 MQTT is easy to use and keeps subscription and publishing tasks separate. To get info from a device, you don't need to know all its details like its address or password. You just need to connect to a "middleman" called a broker and know the topic's name. This pattern offers many advantages for IoT over other protocols, such as HTTP, which requires servers and clients to be aware of each other's details and communicate directly.

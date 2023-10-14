@@ -20,7 +20,7 @@ You can route your microservices or monolith application through it and make it 
 
 This is a typical use case for NGINX:
 
-![NGINX use case](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rmd1zgsahfz6cu31hbp3.png)
+![NGINX use case](/assets/blog/2023-01-04/nginx-use-case.jpeg)
 
 Although, [ReductStore][2] supports TSL encryption and token authentication, there are a few cases where NGINX could
 be useful:

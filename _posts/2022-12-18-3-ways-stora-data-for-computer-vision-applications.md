@@ -20,7 +20,7 @@ We’ll also discuss some of the pros and cons of each option.
 For demonstration purposes, we’ll use a simple computer vision application which is connected to a CV camera and runs on
 an edge device:
 
-![Computer Vision Application](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3xnmmbq4i49j8ejnh5qu.png)
+![Computer Vision Application](/assets/blog/2022-12-18/computer-vision-application.jpeg)
 
 The camera driver captures images from the CV camera every second and sends them to the model. The model detects
 something and shows the results in the user interface.
@@ -34,7 +34,7 @@ So far it isn’t too complicated, let’s see how we can deal with the data her
 If an application needs to save an image from a CV camera, it can simply save it on a hard drive. We can use a timestamp
 as a unique identifier, and organize folders and files so that we can access it later via a time interval.
 
-![File System Usage](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c8yj989keh5e8vny2krq.png)
+![File System Usage](/assets/blog/2022-12-18/file-system-usage.jpeg)
 
 One advantage of this method is that it is very simple. You don’t need any additional components for your system.
 However, it also has a few drawbacks.
@@ -54,7 +54,7 @@ However, it also has a few drawbacks.
 A more advanced approach is to use an object storage system for images. This allows us to organize our data in the
 storage engine just like folders and files, but access and manage it using an HTTP API.
 
-![S3-like Storage Usage](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/z18jkoqhzd1qkmou4ge9.png)
+![S3-like Storage Usage](/assets/blog/2022-12-18/s3-like-storage-usage.jpeg)
 
 This is a more flexible approach than a simple file system and has some advantages:
 
@@ -77,7 +77,7 @@ Unfortunately, this solution is also not perfect.
 is designed to solve the problem of data reduction and availability for AI/ML applications, where we have data of
 various sizes and formats continuously coming from data sources.
 
-![ReductStore Usage](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oeaornitl6k459vwmoz1.png)
+![ReductStore Usage](/assets/blog/2022-12-18/reductStore-usage.jpeg)
 
 As you can see, the structure of our application is similar to when using an S3-like storage system, but it works
 differently. Instead of storing blobs individually, it preallocates blocks of fixed size and writes multiple blobs to
