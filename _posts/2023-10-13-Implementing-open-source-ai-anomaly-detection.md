@@ -11,7 +11,7 @@ categories:
 - AI
 ---
 
-![Photo by Randy Fath](https://storage.googleapis.com/reductstore_blog_images/2023-10-13/randy-fath-chess.jpeg "Photo by Randy Fath")
+![Photo by Randy Fath](/assets/blog/2023-10-13/randy-fath-chess.jpeg)
 <small>Photo by [Randy Fath](https://unsplash.com/@randyfath?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"} on [Unsplash](https://unsplash.com/photos/G1yhU1Ej-9A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"}</small>
 
 
@@ -87,7 +87,7 @@ Once satisfied with its performance and reliability, you can then switch over fr
 
 To better visualize how ReductStore can integrate with your machine learning workflow, from data capture to inference, consider the following diagram. It provides an overview of how we can make the most out of AI tags and models stationed at the edge.
 
-![ML Data Flow Diagram](https://storage.googleapis.com/reductstore_blog_images/2023-10-13/ml_data_flow_diagram.jpeg)
+![ML Data Flow Diagram](/assets/blog/2023-10-13/ml-data-flow-diagram.jpeg)
 <small>Diagram illustrating the flow of data capture, storage, inference, and training with ReductStore.</small>
 
 AI tags represent the results of your AI model's analysis on each image, such as identified anomalies. By storing these tags alongside your images in ReductStore, you streamline your system's workflow and make the whole process simpler.
