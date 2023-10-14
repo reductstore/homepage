@@ -37,7 +37,7 @@ Anomaly detection in images plays a crucial role in numerous fields, ranging fro
 
 The importance of anomaly detection also extends to quality control in manufacturing, where it can spot defects on assembly lines avoiding costly recalls and, hopefully, ensuring customer satisfaction. 
 
-Real-time implementation of open-source models for this purpose allows these sectors to react quickly to anomalies and make informed decisions instantly. Additionally, the utilization of labels to tag data allows for further utilization of the said labels in order to conduct statistical analysis and obtain valuable insights.
+Real-time implementation of open-source models for this purpose allows these sectors to react quickly to anomalies and make informed decisions instantly. Additionally, the utilization of labels to label data allows for further utilization of the said labels in order to conduct statistical analysis and obtain valuable insights.
 
 ## Exploring Anomalib: A Deep Learning Library for Anomaly Detection in Images
 
@@ -81,16 +81,16 @@ This allows you to assess how well the model performs under real-world condition
 
 Once satisfied with its performance and reliability, you can then switch over from your old system to this newly deployed AI model.
 
-### Harnessing ReductStore: Storing AI Tags and Models at the Edge with a Time-Series Database for Blob Data
+### Harnessing ReductStore: Storing AI Labels and Models at the Edge with a Time-Series Database for Blob Data
 
-[ReductStore](https://www.reduct.store/) is an innovative time-series database designed specifically for managing Blob data, making it ideal for our needs in real-time unsupervised anomaly detection. The true strength of ReductStore lies in its ability to store not just raw data but also AI tags within the metadata and models at the edge.
+[ReductStore](https://www.reduct.store/) is an innovative time-series database designed specifically for managing Blob data, making it ideal for our needs in real-time unsupervised anomaly detection. The true strength of ReductStore lies in its ability to store not just raw data but also AI labels within the metadata and models at the edge.
 
-To better visualize how ReductStore can integrate with your machine learning workflow, from data capture to inference, consider the following diagram. It provides an overview of how we can make the most out of AI tags and models stationed at the edge.
+To better visualize how ReductStore can integrate with your machine learning workflow, from data capture to inference, consider the following diagram. It provides an overview of how we can make the most out of AI labels and models stationed at the edge.
 
 ![ML Data Flow Diagram](/assets/blog/2023-10-13/ml-data-flow-diagram.jpeg)
 <small>Diagram illustrating the flow of data capture, storage, inference, and training with ReductStore.</small>
 
-AI tags represent the results of your AI model's analysis on each image, such as identified anomalies. By storing these tags alongside your images in ReductStore, you streamline your system's workflow and make the whole process simpler.
+AI labels represent the results of your AI model's analysis on each image, such as identified anomalies. By storing these labels alongside your images in ReductStore, you streamline your system's workflow and make the whole process simpler.
 
 Meanwhile, keeping models at the edge means deploying your trained AI models directly onto end-user devices or closer to where data is generated. This method cuts down on latency issues since you don't need to transmit large volumes of image data over networks; instead, you analyze it right where it’s collected. 
 
