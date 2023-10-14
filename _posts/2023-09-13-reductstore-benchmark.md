@@ -12,7 +12,7 @@ categories:
 
 Benchmarks don't lie, let's put the systems to the ultimate test.
 
-![Diagram of ReductStore vs MinIO and InfluxDB benchmark on Edge Device HX401](https://storage.googleapis.com/reductstore_blog_images/benchmark/ReductStore%20-%20Benchmark.png "Diagram of ReductStore vs MinIO and InfluxDB benchmark on Edge Device HX401")
+![Diagram of ReductStore vs MinIO and InfluxDB benchmark on Edge Device HX401](/assets/blog/2023-09-13/reductstore-benchmark.jpeg "Diagram of ReductStore vs MinIO and InfluxDB benchmark on Edge Device HX401")
 <small>ReductStore vs. MinIO & InfluxDB on Edge Device HX401</small>
 
 For anyone deeply immersed in the engineering world of Edge Computing, Computer Vision, or IoT, you'll want to read further to understand why a time series database for blob data is needed and where it stands out.
@@ -41,7 +41,7 @@ For more details and code, you can visit our **[Benchmark GitHub Repository](htt
 
 To get a better idea of the environment, let's take a look at the system architectures shown in the figure below.
 
-![Block Diagram of the Benchmarking Setup](https://storage.googleapis.com/reductstore_blog_images/benchmark/benchmark-network.png "Block Diagram of the Benchmarking Setup")
+![Block Diagram of the Benchmarking Setup](/assets/blog/2023-09-13/benchmark-network.jpeg "Block Diagram of the Benchmarking Setup")
 <small>Block Diagram of the Benchmarking Setup</small>
 
 Both systems are installed on an edge device, Helix 401 (HX401), typically used for data acquisition in an industrial environment. The computer conducting the benchmark retrieves data from the edge device via a network overseen by ZeroTier with a maximum speed of 100Mbps.
@@ -61,9 +61,9 @@ The bar plots compare batch read times for 1,000 blobs. Specifically, one graph 
 If the error bars on the graph have caught your attention, allow me to clarify: We ran the experiment several times. The central value represents the average read time across all runs, and the error bar indicates the inter-quartile range, capturing the span between the 25th and 75th percentiles of our experiments.
 
 
-![Read Time vs Blob Size for Batches of 1000 Blobs under 32 KiB](https://storage.googleapis.com/reductstore_blog_images/benchmark/batch_read_time_small.png "Read Time vs Blob Size for Batches of 1000 Blobs under 32 KiB")
+![Read Time vs Blob Size for Batches of 1000 Blobs under 32 KiB](/assets/blog/2023-09-13/benchmark/batch_read_time_small.jpeg "Read Time vs Blob Size for Batches of 1000 Blobs under 32 KiB")
 
-![Read Time vs Blob Size for Batches of 1000 Blobs above 32 KiB](https://storage.googleapis.com/reductstore_blog_images/benchmark/batch_read_time_large.png "Read Time vs Blob Size for Batches of 1000 Blobs above 32 KiB")
+![Read Time vs Blob Size for Batches of 1000 Blobs above 32 KiB](/assets/blog/2023-09-13/batch_read_time_large.jpeg "Read Time vs Blob Size for Batches of 1000 Blobs above 32 KiB")
 
 The optimization of ReductStore for smaller objects certainly plays a part in its standout performance. Nevertheless, it's worth mentioning that for larger blobs, network constraints emerge as the primary bottleneck. In our case, the benchmark was run over a network with a maximum speed of 100Mbps, and you would get an even larger performance gap with a faster network.
 

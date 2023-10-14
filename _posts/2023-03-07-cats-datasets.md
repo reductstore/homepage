@@ -81,13 +81,13 @@ async for record in bucket.query(DATASET, start=0, stop=5):
     display(Image.fromarray(img))
 ```  
 
-![Cat number 1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8en9orevy735oiqjzk9l.png)
+![Cat number 1](/assets/blog/2023-03-07/cat-number-1.jpeg)
 
-![Cat number 2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/eq1pmt29zkhzsl0djoi9.png)
+![Cat number 2](/assets/blog/2023-03-07/cat-number-2.jpeg)
 
-![Cat number 3](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/s8k8zwid9yzythmea0p0.png)
+![Cat number 3](/assets/blog/2023-03-07/cat-number-3.jpeg)
 
-![Cat number 4](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/a00v21hz9etxu697vccd.png)
+![Cat number 4](/assets/blog/2023-03-07/cat-number-4.jpeg)
 
 This is a trivial example, but you can use this dataset for more sophisticated AI algorithms or image processing. If the
 interaction over the Internet is too slow for your purposes, you can export the dataset to a file system. Alternatively,
