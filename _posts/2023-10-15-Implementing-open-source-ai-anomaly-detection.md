@@ -114,6 +114,8 @@ To better visualize how ReductStore can integrate with your machine learning wor
 
 AI labels indicate the outcomes of your model's evaluation on each picture, like the presence or absence of an anomaly in our case. By storing these labels alongside your images in ReductStore, you streamline your system's workflow and make the whole process simpler.
 
+Furthermore, annotated images are manually labeled or validated by a human operator, and then stored in ReductStore. This annotation can be the actual label inferred by the model which is then validated by a human operator, or it can be more complex, like a mask highlighting the areas of the image that the model should identify as anomalies. This allows for continuous improvement of your model's performance over time.
+
 Meanwhile, keeping models at the edge means deploying your trained models directly onto end-user devices or closer to where data is generated. This method cuts down on latency issues since you don't need to transmit large volumes of image data over networks; instead, you analyze it right where it’s collected. 
 
 ## Conclusion
