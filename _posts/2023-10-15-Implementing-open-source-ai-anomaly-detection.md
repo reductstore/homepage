@@ -2,7 +2,7 @@
 layout: post
 title: "From Lab to Live: Implementing Open-Source AI Models for Real-Time Unsupervised Anomaly Detection in Images"
 description: Explore the process of deploying open-source AI models for real-time image anomaly detection, bridging the gap between research and practical applications.
-date: 2023-10-13
+date: 2023-10-15
 author: Anthony Cavin
 categories:
 
@@ -11,7 +11,7 @@ categories:
 - AI
 ---
 
-![Photo by Randy Fath](/assets/blog/2023-10-13/randy-fath-chess.jpeg)
+![Photo by Randy Fath](/assets/blog/2023-10-15/randy-fath-chess.jpeg)
 <small>Photo by [Randy Fath](https://unsplash.com/@randyfath?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"} on [Unsplash](https://unsplash.com/photos/G1yhU1Ej-9A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash){:target="_blank"}</small>
 
 
@@ -43,7 +43,7 @@ Real-time implementation of open-source models for this purpose allows these sec
 
 [Anomalib](https://github.com/openvinotoolkit/anomalib) is an open-source library for unsupervised anomaly detection in images. It offers a collection of state-of-the-art models that can be trained on your specific images.
 
-![Anomalib](/assets/blog/2023-10-13/anomalib_image_example.jpeg)
+![Anomalib](/assets/blog/2023-10-15/anomalib_image_example.jpeg)
 <small>Example of an anomaly detected with [Anomalib](https://github.com/openvinotoolkit/anomalib)</small>
 
 For achieving the best training results, it is advised to obtain a suitable quantity of images that are free from any abnormalities. It is preferable to have a few hundred images for this purpose. Furthermore, in order to perform testing and validation, it is recommended to acquire a few images that do include anomalies as well.
@@ -109,7 +109,7 @@ Once satisfied with its performance and reliability, you can then switch over fr
 
 To better visualize how ReductStore can integrate with your machine learning workflow, from data capture to inference, consider the following diagram. It provides an overview of how we can make the most out of AI labels and models stationed at the edge.
 
-![ML Data Flow Diagram](/assets/blog/2023-10-13/reductai.jpg)
+![ML Data Flow Diagram](/assets/blog/2023-10-15/reductai.jpg)
 <small>Diagram illustrating the flow of data capture, storage, inference, and training with ReductStore.</small>
 
 AI labels indicate the outcomes of your model's evaluation on each picture, like the presence or absence of an anomaly in our case. By storing these labels alongside your images in ReductStore, you streamline your system's workflow and make the whole process simpler.
